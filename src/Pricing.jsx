@@ -6,7 +6,7 @@ const Pricing = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
-        fetch("/pricing.json")
+        fetch("http://localhost:5000/slipPrices")
             .then(res => res.json())
             .then(json => {
                 const sortedPricing = json.sort((a, b) =>
@@ -17,8 +17,8 @@ const Pricing = () => {
             });
     }, []);
 
-    const getColorForKSA = (ksa) => {
-        const ksaValue = parseInt(ksa.replace(/,/g, ''));
+    const getColorForKSA = (ksaValue) => {
+        // const ksaValue = parseInt(ksa.replace(/,/g, ''));
     
         if (ksaValue < 6000) {
             return 'text-green-500'; // light green
@@ -77,7 +77,7 @@ const Pricing = () => {
                                         {prices?.medicalName}
                                     </td>
                                     <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksa)}`}>
-                                        {parseInt(prices?.ksa.replace(/,/g, ''))?.toLocaleString()}
+                                        {prices?.ksa}/=
                                     </td>
                                     <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
                                         {prices?.time}
