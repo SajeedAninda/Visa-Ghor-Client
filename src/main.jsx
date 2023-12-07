@@ -11,6 +11,7 @@ import AdminPanel from './Admin/AdminPanel.jsx';
 import Dashboard from './Admin/Dashboard.jsx';
 import AddSlip from './Admin/AddSlip.jsx';
 import SlipList from './Admin/SlipList.jsx';
+import UpdateList from './Admin/UpdateList.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -27,9 +28,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="addSlip" element={<AddSlip />} />
           <Route path="slipList" element={<SlipList />} />
           <Route
-            path="updateSlipPricing/:id"
-            element={<SlipList />}
-            loader={({ params }) => fetch(`https://sovereign-asset-solutions-server.vercel.app/updateAsset/${params.id}`).then(res => res.json())}
+            path="slipList/updateSlipPricing/:id"
+            element={<UpdateList />}
+            loader={({ params }) => fetch(`http://localhost:5000/updateSlipPricing/${params.id}`).then(res => res.json())}
           />
         </Route>
       </Routes>

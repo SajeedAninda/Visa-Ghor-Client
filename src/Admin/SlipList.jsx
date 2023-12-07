@@ -139,7 +139,7 @@ const SlipList = () => {
                                                     {prices?.time}
                                                 </td>
                                                 <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
-                                                    <Link to={`/updateSlipPricing/${prices?._id}`}>
+                                                    <Link to={`updateSlipPricing/${prices?._id}`}>
                                                         <MdEditSquare className='text-2xl' />
                                                     </Link>
                                                 </td>
