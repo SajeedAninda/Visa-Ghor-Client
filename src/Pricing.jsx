@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { ColorRing } from 'react-loader-spinner';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
     const [pricing, setPricing] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
+    let [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetch("http://localhost:5000/slipPrices")
@@ -14,12 +16,13 @@ const Pricing = () => {
                 );
 
                 setPricing(sortedPricing);
+                setLoading(false);
             });
     }, []);
 
     const getColorForKSA = (ksaValue) => {
         // const ksaValue = parseInt(ksa.replace(/,/g, ''));
-    
+
         if (ksaValue < 6000) {
             return 'text-green-500'; // light green
         } else if (ksaValue >= 6000 && ksaValue < 7000) {
@@ -32,7 +35,7 @@ const Pricing = () => {
             return 'text-red-700'; // red
         }
     };
-    
+
 
     const filteredPricing = pricing.filter(prices =>
         prices.medicalName.toLowerCase().includes(searchTerm.toLowerCase())
@@ -58,34 +61,53 @@ const Pricing = () => {
 
                 <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
                     <h2 className='text-semibold italic pb-3 text-lg'>*Normal Slip (Delay): 1000/=</h2>
-                    <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
-                        <thead>
-                            <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white">
-                                <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
-                                <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
-                                <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
-                                <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Time</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {filteredPricing.map((prices, index) => (
-                                <tr key={index}>
-                                    <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
-                                        {index + 1}
-                                    </td>
-                                    <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                        {prices?.medicalName}
-                                    </td>
-                                    <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksa)}`}>
-                                        {prices?.ksa}/=
-                                    </td>
-                                    <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
-                                        {prices?.time}
-                                    </td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                    {
+                        loading ?
+                            (
+                                <div className='flex text-center justify-center items-center'>
+                                    <ColorRing
+                                        visible={true}
+                                        height="80"
+                                        width="80"
+                                        ariaLabel="blocks-loading"
+                                        wrapperStyle={{}}
+                                        wrapperClass="blocks-wrapper"
+                                        colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
+                                    />
+                                </div>
+                            )
+                            :
+                            (
+                                <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
+                                    <thead>
+                                        <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white">
+                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
+                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
+                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
+                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Time</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {filteredPricing.map((prices, index) => (
+                                            <tr key={index}>
+                                                <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
+                                                    {index + 1}
+                                                </td>
+                                                <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
+                                                    {prices?.medicalName}
+                                                </td>
+                                                <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksa)}`}>
+                                                    {prices?.ksa}/=
+                                                </td>
+                                                <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
+                                                    {prices?.time}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            )
+                    }
                 </div>
                 <Link className="flex justify-center items-center pb-8" to={"/"}>
                     <button className="py-3 px-6 rounded-md bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white font bold hover:bg-gradient-to-r hover:from-[#952895] hover:to-[#0b64b2c7]">

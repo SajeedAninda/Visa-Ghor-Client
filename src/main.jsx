@@ -21,16 +21,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/air_ticket_prices" element={<AirTicketPrices />} />
         <Route path="/tourist_visa_prices" element={<TouristVisaPrices />} />
         <Route path="/other_services" element={<OtherServices />} />
-        <Route
-          path="/admin"
-          element={<AdminPanel />}
-        >
+        <Route path="/admin" element={<AdminPanel />}>
           {/* Children routes for /admin/dashboard */}
           <Route index element={<Dashboard />} />
           <Route path="addSlip" element={<AddSlip />} />
           <Route path="slipList" element={<SlipList />} />
+          <Route
+            path="updateSlipPricing/:id"
+            element={<SlipList />}
+            loader={({ params }) => fetch(`https://sovereign-asset-solutions-server.vercel.app/updateAsset/${params.id}`).then(res => res.json())}
+          />
         </Route>
-
       </Routes>
     </HashRouter>
   </React.StrictMode>
