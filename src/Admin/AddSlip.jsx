@@ -2,6 +2,8 @@ import React from 'react';
 import "./addSlip.css"
 import addLottie from "../assets/addLottie.json"
 import Lottie from 'lottie-react';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 const AddSlip = () => {
     let handleAddSlipPrice = (e) => {
@@ -11,10 +13,21 @@ const AddSlip = () => {
         let timeRequired = e.target.timeRequired.value;
 
         let slipDetails = { medicalName, ksa: ksaSlipPrice, time: timeRequired };
-        console.log(slipDetails);
+        axios.post("http://localhost:5000/addSlip", slipDetails)
+            .then(res => {
+                console.log(res.data);
+                if (res.data.insertedId) {
+                    Swal.fire({
+                        title: "Good job!",
+                        text: "Slip Added Successfully!",
+                        icon: "success"
+                    });
+                    e.target.medicalName.value = "";
+                    e.target.ksaSlipPrice.value = "";
+                    e.target.timeRequired.value = "";
+                }
+            })
     }
-
-
 
 
 
