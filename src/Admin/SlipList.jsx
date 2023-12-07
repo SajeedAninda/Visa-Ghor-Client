@@ -155,11 +155,6 @@ const SlipList = () => {
                             )
                     }
                 </div>
-                <Link className="flex justify-center items-center pb-8" to={"/"}>
-                    <button className="py-3 px-6 rounded-md bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white font bold hover:bg-gradient-to-r hover:from-[#952895] hover:to-[#0b64b2c7]">
-                        Back to Home
-                    </button>
-                </Link>
             </div>
         </div>
     );
