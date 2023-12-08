@@ -48,6 +48,9 @@ const AdminPanel = () => {
                             >
                                 Slip List
                             </NavLink>
+                            <button className='text-base md:text-lg p-2 text-[#fcf4e9] hover:bg-white hover:text-[#952895] rounded-md'>
+                                Logout
+                            </button>
                         </ul>
                     </div>
                 </div>

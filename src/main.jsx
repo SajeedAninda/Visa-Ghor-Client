@@ -12,28 +12,34 @@ import Dashboard from './Admin/Dashboard.jsx';
 import AddSlip from './Admin/AddSlip.jsx';
 import SlipList from './Admin/SlipList.jsx';
 import UpdateList from './Admin/UpdateList.jsx';
+import AuthenticationProvider from './Authentication/AuthenticationProvider.jsx';
+import Login from './Admin/Login.jsx';
+import PrivateRoute from './PrivateRoute.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HashRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/slip_price" element={<Pricing />} />
-        <Route path="/air_ticket_prices" element={<AirTicketPrices />} />
-        <Route path="/tourist_visa_prices" element={<TouristVisaPrices />} />
-        <Route path="/other_services" element={<OtherServices />} />
-        <Route path="/admin" element={<AdminPanel />}>
-          {/* Children routes for /admin/dashboard */}
-          <Route index element={<Dashboard />} />
-          <Route path="addSlip" element={<AddSlip />} />
-          <Route path="slipList" element={<SlipList />} />
-          <Route
-            path="slipList/updateSlipPricing/:id"
-            element={<UpdateList />}
-            loader={({ params }) => fetch(`http://localhost:5000/updateSlipPricing/${params.id}`).then(res => res.json())}
-          />
-        </Route>
-      </Routes>
+      <AuthenticationProvider>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/slip_price" element={<Pricing />} />
+          <Route path="/air_ticket_prices" element={<AirTicketPrices />} />
+          <Route path="/tourist_visa_prices" element={<TouristVisaPrices />} />
+          <Route path="/other_services" element={<OtherServices />} />
+          <Route path="/admin" element={<AdminPanel />}>
+            {/* Children routes for /admin/dashboard */}
+            <Route index element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+            <Route path="addSlip" element={<PrivateRoute><AddSlip /></PrivateRoute>} />
+            <Route path="slipList" element={<PrivateRoute><SlipList /></PrivateRoute>} />
+            <Route
+              path="slipList/updateSlipPricing/:id"
+              element={<PrivateRoute><UpdateList /></PrivateRoute>}
+              loader={({ params }) => fetch(`http://localhost:5000/updateSlipPricing/${params.id}`).then(res => res.json())}
+            />
+          </Route>
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </AuthenticationProvider>
     </HashRouter>
   </React.StrictMode>
 );

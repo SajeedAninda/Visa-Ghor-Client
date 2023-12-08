@@ -94,7 +94,7 @@ const SlipList = () => {
                 </div>
 
                 <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
-                    <h2 className='text-semibold italic pb-3 text-lg'>*Normal Slip (Delay): 1000/=</h2>
+                    <h2 className='text-semibold italic pb-3 text-lg'>*Normal Slip (Delay): 900/=</h2>
                     {
                         loading ?
                             (
