@@ -34,7 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route
               path="slipList/updateSlipPricing/:id"
               element={<PrivateRoute><UpdateList /></PrivateRoute>}
-              loader={({ params }) => fetch(`http://localhost:5000/updateSlipPricing/${params.id}`).then(res => res.json())}
+              loader={({ params }) => fetch(`https://visa-ghor-server.vercel.app/updateSlipPricing/${params.id}`).then(res => res.json())}
             />
           </Route>
           <Route path="/login" element={<Login />} />

@@ -14,7 +14,7 @@ const AddSlip = () => {
         let urgentTimeRequired = e.target.urgentTimeRequired.value;
 
         let slipDetails = { medicalName, ksa: ksaSlipPrice, regular: regularTimeRequired, urgent: urgentTimeRequired };
-        axios.post("http://localhost:5000/addSlip", slipDetails)
+        axios.post("https://visa-ghor-server.vercel.app/addSlip", slipDetails)
             .then(res => {
                 console.log(res.data);
                 if (res.data.insertedId) {
@@ -36,8 +36,8 @@ const AddSlip = () => {
     return (
         <div className='w-[90%] mx-auto py-8'>
             <h1 className='text-4xl font-bold text-[#0b65b2] text-center'>Enter Slip Price & Details</h1>
-            <div className='flex justify-center items-center'>
-                <div className='w-[60%]'>
+            <div className='flex flex-col md:flex-row justify-center items-center'>
+                <div className='w-full md:w-[60%]'>
                     <form onSubmit={handleAddSlipPrice}>
                         <div>
                             <label className='text-[#952895] font-semibold text-2xl' htmlFor="medicalName">Medical Center Name: </label><br />
@@ -67,7 +67,7 @@ const AddSlip = () => {
                     </form>
                 </div>
 
-                <div className='w-[40%]'>
+                <div className='w-full md:w-[40%]'>
                     <Lottie animationData={addLottie} loop={true} />
                 </div>
             </div>

@@ -8,7 +8,7 @@ const Pricing = () => {
     let [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("http://localhost:5000/slipPrices")
+        fetch("https://visa-ghor-server.vercel.app/slipPrices")
             .then(res => res.json())
             .then(json => {
                 const sortedPricing = json.sort((a, b) =>

@@ -12,7 +12,7 @@ const SlipList = () => {
     let [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("http://localhost:5000/slipPrices")
+        fetch("https://visa-ghor-server.vercel.app/slipPrices")
             .then(res => res.json())
             .then(json => {
                 const sortedPricing = json.sort((a, b) =>
@@ -56,7 +56,7 @@ const SlipList = () => {
             confirmButtonText: 'Yes, Delete!'
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`http://localhost:5000/slipList/${id}`)
+                axios.delete(`https://visa-ghor-server.vercel.app/slipList/${id}`)
                     .then(res => {
                         console.log(res.data);
                         if (res.data.deletedCount > 0) {

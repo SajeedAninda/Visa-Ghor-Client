@@ -11,7 +11,7 @@ const UpdateList = () => {
     let navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/updateSlipPricing/${id}`)
+        axios.get(`https://visa-ghor-server.vercel.app/updateSlipPricing/${id}`)
             .then(res => {
                 setSlipData(res.data);
             })
@@ -29,7 +29,7 @@ const UpdateList = () => {
 
         let slipDetails = { medicalName, ksa: ksaSlipPrice, regular: regularTimeRequired, urgent: urgentTimeRequired };
 
-        axios.patch(`http://localhost:5000/updateSlipDetails/${id}`, slipDetails)
+        axios.patch(`https://visa-ghor-server.vercel.app/updateSlipDetails/${id}`, slipDetails)
             .then(res => {
                 console.log(res.data);
                 if (res.data.modifiedCount > 0) {
@@ -47,8 +47,8 @@ const UpdateList = () => {
     return (
         <div className='w-[90%] mx-auto py-8'>
             <h1 className='text-4xl font-bold text-[#0b65b2] text-center'>Update Slip Prices & Details</h1>
-            <div className='flex justify-center items-center'>
-                <div className='w-[60%]'>
+            <div className='flex flex-col md:flex-row justify-center items-center'>
+                <div className='w-full md:w-[60%]'>
                     <form onSubmit={handleSlipUpdate}>
                         <div>
                             <label className='text-[#952895] font-semibold text-2xl' htmlFor="medicalName">Medical Center Name: </label><br />
@@ -78,7 +78,7 @@ const UpdateList = () => {
                     </form>
                 </div>
 
-                <div className='w-[40%]'>
+                <div className='w-full md:w-[40%]'>
                     <Lottie animationData={updateLottie} loop={true} />
                 </div>
             </div>
