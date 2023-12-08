@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import logo from "../assets/logo.jpg"
+import { AuthContext } from '../Authentication/AuthenticationProvider';
 
 const AdminPanel = () => {
+    let { logOut } = useContext(AuthContext);
+
+    let handleLogout = () => {
+        logOut()
+            .then(() => {
+                console.log("Logged Out Successfully");
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+
+
+
     return (
         <div className="drawer">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -48,7 +63,7 @@ const AdminPanel = () => {
                             >
                                 Slip List
                             </NavLink>
-                            <button className='text-base md:text-lg p-2 text-[#fcf4e9] hover:bg-white hover:text-[#952895] rounded-md'>
+                            <button onClick={handleLogout} className='text-base md:text-lg p-2 text-[#fcf4e9] hover:bg-white hover:text-[#952895] rounded-md'>
                                 Logout
                             </button>
                         </ul>
