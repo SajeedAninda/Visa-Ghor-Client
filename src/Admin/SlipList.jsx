@@ -118,7 +118,8 @@ const SlipList = () => {
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
-                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Time</th>
+                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Regular</th>
+                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Urgent</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Edit</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Delete</th>
                                         </tr>
@@ -136,7 +137,10 @@ const SlipList = () => {
                                                     {prices?.ksa}/=
                                                 </td>
                                                 <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
-                                                    {prices?.time}
+                                                    {prices?.regular}
+                                                </td>
+                                                <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
+                                                    {prices?.urgent}
                                                 </td>
                                                 <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
                                                     <Link to={`updateSlipPricing/${prices?._id}`}>

@@ -24,8 +24,10 @@ const UpdateList = () => {
         e.preventDefault();
         let medicalName = e.target.medicalName.value;
         let ksaSlipPrice = e.target.ksaSlipPrice.value;
-        let timeRequired = e.target.timeRequired.value;
-        let slipDetails = { medicalName, ksa: ksaSlipPrice, time: timeRequired };
+        let regularTimeRequired = e.target.regularTimeRequired.value;
+        let urgentTimeRequired = e.target.urgentTimeRequired.value;
+
+        let slipDetails = { medicalName, ksa: ksaSlipPrice, regular: regularTimeRequired, urgent: urgentTimeRequired };
 
         axios.patch(`http://localhost:5000/updateSlipDetails/${id}`, slipDetails)
             .then(res => {
@@ -59,8 +61,13 @@ const UpdateList = () => {
                         </div>
 
                         <div className='mt-6'>
-                            <label className='text-[#952895] font-semibold text-2xl' htmlFor="timeRequired">Required Time: </label><br />
-                            <input defaultValue={slipData?.time} className='w-full px-3 py-3 border-2 rounded-md mt-2 border-[#0b65b2]' type="text" name='timeRequired' placeholder='Enter Time Required (Example: 3 to 7 Days)' />
+                            <label className='text-[#952895] font-semibold text-2xl' htmlFor="regularTimeRequired">Regular Slip Required Time: </label><br />
+                            <input defaultValue={slipData?.regular} className='w-full px-3 py-3 border-2 rounded-md mt-2 border-[#0b65b2]' type="text" name='regularTimeRequired' placeholder='Enter Regular Slip Time Required (Example: 3 to 7 Days)' />
+                        </div>
+
+                        <div className='mt-6'>
+                            <label className='text-[#952895] font-semibold text-2xl' htmlFor="urgentTimeRequired">Urgent Slip Required Time: </label><br />
+                            <input defaultValue={slipData?.urgent} className='w-full px-3 py-3 border-2 rounded-md mt-2 border-[#0b65b2]' type="text" name='urgentTimeRequired' placeholder='Enter Urgent Slip Time Required (Example: 1 to 2 Days)' />
                         </div>
 
                         <div className='mt-6 w-full'>

@@ -3,558 +3,650 @@
         "id": "1",
         "medicalName": "Al Arouba Medical Services P.Ltd",
         "ksa": 12500,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "2",
         "medicalName": "ALTASHKHIS MARKAZ LIMITED",
         "ksa": 11500,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "3",
         "medicalName": "AMIR JAHAN MEDICAL CENTER",
         "ksa": 9700,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "4",
         "medicalName": "PHOENIX MEDICAL CENTER",
         "ksa": 9700,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "5",
         "medicalName": "ANAS MEDICAL CENTER",
         "ksa": 9700,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "6",
         "medicalName": "YADAN MEDICAL",
         "ksa": 9700,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "7",
         "medicalName": "Rx Medical Centre",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "8",
         "medicalName": "ALIF-LAM-MIM HEALTH SERVICES LTD",
         "ksa": 9700,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "9",
         "medicalName": "Gulf Medical Center",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "10",
         "medicalName": "Life Diagnostic Center",
         "ksa": 9700,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "11",
         "medicalName": "Medinova Medical Services Ltd",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "12",
         "medicalName": "Nova Medical Center",
         "ksa": 6700,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "13",
         "medicalName": "International Health Center",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "14",
         "medicalName": "Al-Nahda Medical Centre",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "15",
         "medicalName": "Ibn Rushd Medical Center",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "16",
         "medicalName": "Leading Health Check up",
         "ksa": 6700,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "17",
         "medicalName": "Dhaka Crown Medical Centre",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "18",
         "medicalName": "Al Jami Diagnostic Centre",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "19",
         "medicalName": "Kent Medical Services Ltd.",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "20",
         "medicalName": "Al Mashoor Diagnostic Services",
         "ksa": 6500,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "21",
         "medicalName": "Global Medicare Diagnostics Ltd.",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "22",
         "medicalName": "Saam Health Checkup Ltd",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "23",
         "medicalName": "Al-Madina Medical Services",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "24",
         "medicalName": "Gulshan Medicare - Dhaka",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "25",
         "medicalName": "Saudi Bangladesh Services Company",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "26",
         "medicalName": "Pulse Medical Center",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "27",
         "medicalName": "Unique Medical Centre",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "28",
         "medicalName": "SKN Health Services",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "29",
         "medicalName": "Al Mubasher Medical Diagnostic Services",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "30",
         "medicalName": "Orbitals Medical Centre Limited",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "31",
         "medicalName": "Tulip Medical Center",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "32",
         "medicalName": "AL-BAHA MEDICAL CENTER",
         "ksa": 9700,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "33",
         "medicalName": "Green Crescent Health Services",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "34",
-        "medicalName": "Arabian Medical Center",
+        "medicalName": "Health Care Medical Centre",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "35",
-        "medicalName": "Saimon Medical Centre",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Medi-Aid Clinic",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "36",
-        "medicalName": "Ibn Sina Medical Check Up Unit",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Bangladesh Diagnostic Center",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "37",
-        "medicalName": "Al-Humyra Health Centre Ltd",
-        "ksa": 6700,
-        "time": "3 to 7 Days"
+        "medicalName": "Al-Muhibbah Health Care Centre",
+        "ksa": 5600,
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "38",
-        "medicalName": "Al-Riyadh Medical Check up",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Dhaka International Medical Center",
+        "ksa": 9700,
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "39",
-        "medicalName": "Chandshi Medical Center",
+        "medicalName": "Al-Amin Medical Care Center",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "40",
-        "medicalName": "Fairways Medical Center",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Al-Hamd Medical Centre",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "41",
-        "medicalName": "Health Care Center",
-        "ksa": 6700,
-        "time": "3 to 7 Days"
+        "medicalName": "Al-Maruf Medical Centre",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "42",
-        "medicalName": "Muscat Medical Center",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "AL-RAZI HEALTH CARE",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "43",
-        "medicalName": "Makkha Medical Center",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Royal Medical Center",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "44",
-        "medicalName": "National Medical Center Limited",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Ibn Sina Medical Centre",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "45",
-        "medicalName": "Pushpo Clinic",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Life Spring Medical Centre Ltd.",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "46",
-        "medicalName": "Al Hayatt Medical Centre",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Alif Healthcare & Diagnostics",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "47",
-        "medicalName": "Ishtiyaq Medical Center",
-        "ksa": 6700,
-        "time": "3 to 7 Days"
+        "medicalName": "Al-Huda Diagnostic Center",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "48",
-        "medicalName": "The Classic Medical Centre Ltd",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Al-Shifa Medical Center",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "49",
-        "medicalName": "Allied Diagnostics Ltd",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Al-Noor Medical Centre",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "50",
-        "medicalName": "Paradyne Medical Centre",
+        "medicalName": "Al-Faizan Medical Centre",
         "ksa": 6200,
-        "time": "3 to 7 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "51",
-        "medicalName": "Standard Medical Centre",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Al-Ahad Medical Center",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "52",
-        "medicalName": "Transworld Medical Center",
+        "medicalName": "Azzad Medical Centre",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "53",
-        "medicalName": "Mohaimid Medical Center",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Bangladesh Institute of Health Sciences (BIHS)",
+        "ksa": 7200,
+        "regular": "5 to 10 Days",
+        "urgent": "2 to 3 Days"
     },
     {
         "id": "54",
-        "medicalName": "Bashundhara Medical Center",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "BIRDEM Hospital",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "55",
-        "medicalName": "Crystal Diagnostic",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "City Medical College & Hospital",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "56",
-        "medicalName": "Stemz Health Care (BD) Ltd",
-        "ksa": 7500,
-        "time": "3 to 7 Days"
+        "medicalName": "Dhaka Medical College Hospital (DMCH)",
+        "ksa": 2500,
+        "regular": "7 to 14 Days",
+        "urgent": "3 to 5 Days"
     },
     {
         "id": "57",
-        "medicalName": "LAB QUEST LIMITED",
+        "medicalName": "Gonoshasthaya Kendra",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "58",
-        "medicalName": "NAFA MEDICAL CENTRE",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Holy Family Red Crescent Medical College Hospital",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "59",
-        "medicalName": "CONFIDENCE MEDICAL CENTRE",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "IBN SINA Diagnostic & Consultation Center",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "60",
-        "medicalName": "STAR MEDICAL AND DIAGNOSTIC CENTER",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "Institute of Child Health",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "61",
-        "medicalName": "ADVANCE HEALTH CARE",
-        "ksa": 5600,
-        "time": "3 Days"
+        "medicalName": "LabAid Specialized Hospital",
+        "ksa": 6200,
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "62",
         "medicalName": "Malancha Medical Services Ltd.",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "63",
         "medicalName": "Perlov Medical Services Ltd.",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "64",
         "medicalName": "The Eureka Diagnostic & Medical Services",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "65",
         "medicalName": "DAWA MEDICAL CENTRE",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "66",
         "medicalName": "IBN OMAR MEDICAL AND DIAGNOSTIC CENTER",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "67",
         "medicalName": "Moon Check-up OPC",
         "ksa": 12500,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "68",
         "medicalName": "Saadiq Medical Services Ltd.",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "69",
         "medicalName": "Zain Medical Limited",
         "ksa": 9700,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "70",
         "medicalName": "INDEX DIAGNOSTIC CENTER",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "71",
         "medicalName": "Overseas Health Checkup Ltd",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "72",
         "medicalName": "Smart Medical Centre",
         "ksa": 8500,
-        "time": "3 to 10 Days"
+        "regular": "3 to 10 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": "73",
         "medicalName": "Safa Diagnostic Center",
         "ksa": 5600,
-        "time": "3 Days"
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
     },
     {
         "id": 74,
         "medicalName": "WORLD HORIZON MEDICAL SERVICES LTD",
         "ksa": 6700,
-        "time": "3 to 7 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 75,
         "medicalName": "Sahara Medical Center",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 76,
         "medicalName": "Khoulud Medical Check-up",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 77,
         "medicalName": "Nazrul Islam Diagnostic",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 78,
         "medicalName": "Mostafa Health Care",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 79,
         "medicalName": "PACIFIC MEDICAL & DIAGNOSTIC CENTER",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 80,
         "medicalName": "Evergreen Medical Center",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 81,
         "medicalName": "Paramount Medical Centre",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 82,
         "medicalName": "Quest Medical Centre",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 83,
         "medicalName": "Namirah Medical Center",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 84,
         "medicalName": "Praava Health",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 85,
         "medicalName": "SARVOSHRESTHA MEDICAL CENTER",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 86,
         "medicalName": "Mohammdi Healthcare Systems Pvt. Ltd.",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 87,
         "medicalName": "SARA MEDICAL CENTER",
         "ksa": 6500,
-        "time": "3 to 7 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 88,
         "medicalName": "MediTest Medical Services",
         "ksa": 7700,
-        "time": "3 to 7 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 89,
         "medicalName": "RELYON MEDICARE",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 90,
         "medicalName": "Healthcare Diagnostic Center Ltd",
         "ksa": 6700,
         "time": "3 to 7 Days"
-      },
-      {
+    },
+    {
         "id": 91,
         "medicalName": "Albustan Medical Center",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 92,
         "medicalName": "Mediquest Diagnostics Ltd",
         "ksa": 5600,
-        "time": "3 Days"
-      },
-      {
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    },
+    {
         "id": 93,
         "medicalName": "MEDILINE HEALTH MANAGEMENT LTD",
         "ksa": 5600,
-        "time": "3 Days"
-      }
+        "regular": "3 to 7 Days",
+        "urgent": "1 to 2 Days"
+    }
 ]
