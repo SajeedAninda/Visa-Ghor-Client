@@ -16,7 +16,7 @@ const SlipList = () => {
             .then(res => res.json())
             .then(json => {
                 const sortedPricing = json.sort((a, b) =>
-                    parseInt(a.ksa) - parseInt(b.ksa)
+                    parseInt(a.ksaRegular) - parseInt(b.ksaRegular)
                 );
 
                 setPricing(sortedPricing);
@@ -94,7 +94,10 @@ const SlipList = () => {
                 </div>
 
                 <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
-                    <h2 className='text-semibold italic pb-3 text-lg'>*Normal Slip (Delay): 900/=</h2>
+                    <div className='flex justify-between items-center gap-3 md:gap-0 pb-2'>
+                        <h2 className='text-semibold text-sm md:text-md lg:text-lg italic pb-1'>*Normal Slip (Delay): 900/=</h2>
+                        <h2 className='text-semibold text-sm md:text-md lg:text-lg italic pb-1 text-[#952895]'>*Regular Slip Time:<span className='font-bold'> 3 to 5 Days</span></h2>
+                    </div>
                     {
                         loading ?
                             (
@@ -117,9 +120,7 @@ const SlipList = () => {
                                         <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white">
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
-                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
-                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Regular</th>
-                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Urgent</th>
+                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Regular Slip Rate</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Edit</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Delete</th>
                                         </tr>
@@ -133,14 +134,8 @@ const SlipList = () => {
                                                 <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
                                                     {prices?.medicalName}
                                                 </td>
-                                                <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksa)}`}>
-                                                    {prices?.ksa}/=
-                                                </td>
-                                                <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
-                                                    {prices?.regular}
-                                                </td>
-                                                <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
-                                                    {prices?.urgent}
+                                                <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
+                                                    {prices?.ksaRegular}/=
                                                 </td>
                                                 <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
                                                     <Link to={`updateSlipPricing/${prices?._id}`}>

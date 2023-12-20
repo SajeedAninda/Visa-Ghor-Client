@@ -9,11 +9,11 @@ const AddSlip = () => {
     let handleAddSlipPrice = (e) => {
         e.preventDefault();
         let medicalName = e.target.medicalName.value;
-        let ksaSlipPrice = e.target.ksaSlipPrice.value;
-        let regularTimeRequired = e.target.regularTimeRequired.value;
-        let urgentTimeRequired = e.target.urgentTimeRequired.value;
+        let ksaRegularPrice = e.target.ksaRegularPrice.value;
+        let ksaUrgentPrice = e.target.ksaUrgentPrice.value;
 
-        let slipDetails = { medicalName, ksa: ksaSlipPrice, regular: regularTimeRequired, urgent: urgentTimeRequired };
+
+        let slipDetails = { medicalName, ksaRegular: ksaRegularPrice, ksaUrgent: ksaUrgentPrice};
         axios.post("https://visa-ghor-server.vercel.app/addSlip", slipDetails)
             .then(res => {
                 console.log(res.data);
@@ -24,9 +24,8 @@ const AddSlip = () => {
                         icon: "success"
                     });
                     e.target.medicalName.value = "";
-                    e.target.ksaSlipPrice.value = "";
-                    e.target.regularTimeRequired.value = "";
-                    e.target.urgentTimeRequired.value = "";
+                    e.target.ksaRegularPrice.value = "";
+                    e.target.ksaUrgentPrice.value = "";
                 }
             })
     }
@@ -45,18 +44,13 @@ const AddSlip = () => {
                         </div>
 
                         <div className='mt-6'>
-                            <label className='text-[#952895] font-semibold text-2xl' htmlFor="ksaSlipPrice">KSA Slip Price: </label><br />
-                            <input className='w-full px-3 py-3 border-2 rounded-md mt-2 border-[#0b65b2]' type="number" name='ksaSlipPrice' placeholder='Enter KSA Slip Price in Numbers' />
+                            <label className='text-[#952895] font-semibold text-2xl' htmlFor="ksaSlipPrice">KSA Regular Slip Price: </label><br />
+                            <input className='w-full px-3 py-3 border-2 rounded-md mt-2 border-[#0b65b2]' type="number" name='ksaRegularPrice' placeholder='Enter KSA Slip Price in Numbers' />
                         </div>
 
                         <div className='mt-6'>
-                            <label className='text-[#952895] font-semibold text-2xl' htmlFor="regularTimeRequired">Regular Slip Required Time: </label><br />
-                            <input className='w-full px-3 py-3 border-2 rounded-md mt-2 border-[#0b65b2]' type="text" name='regularTimeRequired' placeholder='Enter Regular Slip Time Required (Example: 3 to 7 Days)' />
-                        </div>
-
-                        <div className='mt-6'>
-                            <label className='text-[#952895] font-semibold text-2xl' htmlFor="urgentTimeRequired">Urgent Slip Required Time: </label><br />
-                            <input className='w-full px-3 py-3 border-2 rounded-md mt-2 border-[#0b65b2]' type="text" name='urgentTimeRequired' placeholder='Enter Urgent Slip Time Required (Example: 1 to 2 Days)' />
+                            <label className='text-[#952895] font-semibold text-2xl' htmlFor="ksaSlipPrice">KSA Urgent Slip Price: </label><br />
+                            <input className='w-full px-3 py-3 border-2 rounded-md mt-2 border-[#0b65b2]' type="number" name='ksaUrgentPrice' placeholder='Enter KSA Slip Price in Numbers' />
                         </div>
 
                         <div className='mt-6 w-full'>
