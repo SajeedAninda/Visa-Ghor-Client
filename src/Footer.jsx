@@ -28,7 +28,7 @@ const Footer = () => {
                             <Link to="/other_services" className="hover:underline me-4 md:me-6">Others</Link>
                         </li>
                         <li>
-                            <Link to="/login" className="hover:underline">Login</Link>
+                            <Link to="/admin" className="hover:underline">Login</Link>
                         </li>
                     </ul>
                 </div>
