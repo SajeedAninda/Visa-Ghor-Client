@@ -37,6 +37,15 @@ const AdminPanel = () => {
                         <ul className="menu menu-horizontal flex justify-between items-center gap-6">
                             {/* Navbar menu content here */}
                             <NavLink
+                                to={"/"}
+                                end
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "border-2 border-[#fcf4e9] p-2  font-bold text-base md:text-lg text-[#fcf4e9] rounded-md hover:bg-white hover:text-[#952895]" : "text-base md:text-lg p-2 text-[#fcf4e9] hover:bg-white hover:text-[#952895] rounded-md"
+                                }
+                            >
+                                Home
+                            </NavLink>
+                            <NavLink
                                 to={"/admin"}
                                 end
                                 className={({ isActive, isPending }) =>
@@ -73,8 +82,17 @@ const AdminPanel = () => {
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu menu-horizontal bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white flex flex-col justify-between items-center gap-6">
+                <ul className="menu menu-horizontal bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white flex flex-col justify-start px-8 items-center gap-6 z-50 h-full">
                     {/* Navbar menu content here */}
+                    <NavLink
+                                to={"/"}
+                                end
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "border-2 border-[#fcf4e9] p-2  font-bold text-base md:text-lg text-[#fcf4e9] rounded-md hover:bg-white hover:text-[#952895]" : "text-base md:text-lg p-2 text-[#fcf4e9] hover:bg-white hover:text-[#952895] rounded-md"
+                                }
+                            >
+                                Home
+                            </NavLink>
                     <NavLink
                         to={"/admin"}
                         end

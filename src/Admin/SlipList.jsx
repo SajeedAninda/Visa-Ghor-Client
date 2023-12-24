@@ -121,6 +121,7 @@ const SlipList = () => {
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Regular Slip Rate</th>
+                                            <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Location</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Edit</th>
                                             <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Delete</th>
                                         </tr>
@@ -136,6 +137,9 @@ const SlipList = () => {
                                                 </td>
                                                 <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
                                                     {prices?.ksaRegular}/=
+                                                </td>
+                                                <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold `}>
+                                                    {prices?.location}
                                                 </td>
                                                 <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
                                                     <Link to={`updateSlipPricing/${prices?._id}`}>
