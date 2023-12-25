@@ -72,229 +72,250 @@ const Pricing = () => {
                 </div>
 
 
-                {/* MEDICAL CENTERS IN DHAKA */}
                 {
-                    filDhaka.length > 0 &&
-                    (<div>
-                        <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
-                            <h2 className='font-bold pb-1 text-2xl text-[#952895] text-center'>Medical Centers in DHAKA</h2>
-                        </div>
-                        <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
-                            {
-                                loading ?
+                    loading ?
+                        (
+                            <div className='flex text-center justify-center items-center'>
+                                <ColorRing
+                                    visible={true}
+                                    height="80"
+                                    width="80"
+                                    ariaLabel="blocks-loading"
+                                    wrapperStyle={{}}
+                                    wrapperClass="blocks-wrapper"
+                                    colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
+                                />
+                            </div>
+                        )
+                        :
+                        (
+                            <div>
+                                {/* MEDICAL CENTERS IN DHAKA */}
+                                {
+                                    filDhaka.length > 0 &&
+                                    (<div>
+                                        <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
+                                            <h2 className='font-bold pb-1 text-2xl text-[#952895] text-center'>Medical Centers in DHAKA</h2>
+                                        </div>
+                                        <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
+                                            {
+                                                loading ?
+                                                    (
+                                                        <div className='flex text-center justify-center items-center'>
+                                                            <ColorRing
+                                                                visible={true}
+                                                                height="80"
+                                                                width="80"
+                                                                ariaLabel="blocks-loading"
+                                                                wrapperStyle={{}}
+                                                                wrapperClass="blocks-wrapper"
+                                                                colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
+                                                            />
+                                                        </div>
+                                                    )
+                                                    :
+                                                    (
+                                                        <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
+                                                            <thead>
+                                                                <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white">
+                                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
+                                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
+                                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                {filDhaka.map((prices, index) => (
+                                                                    <tr key={index}>
+                                                                        <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
+                                                                            {index + 1}
+                                                                        </td>
+                                                                        <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
+                                                                            {prices?.medicalName}
+                                                                        </td>
+                                                                        <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
+                                                                            {prices?.ksaRegular}/=
+                                                                        </td>
+                                                                    </tr>
+                                                                ))}
+                                                            </tbody>
+                                                        </table>
+                                                    )
+                                            }
+                                        </div>
+                                    </div>)
+                                }
+
+
+                                {/* MEDICAL CENTERS IN CHITTAGONG  */}
+                                {
+                                    filChittagong.length > 0 &&
                                     (
-                                        <div className='flex text-center justify-center items-center'>
-                                            <ColorRing
-                                                visible={true}
-                                                height="80"
-                                                width="80"
-                                                ariaLabel="blocks-loading"
-                                                wrapperStyle={{}}
-                                                wrapperClass="blocks-wrapper"
-                                                colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
-                                            />
+                                        <div>
+                                            <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
+                                                <h2 className='font-bold pb-1 text-2xl text-[#d41a1a]  text-center'>Medical Centers in Chittagong</h2>
+                                            </div>
+                                            <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
+                                                {
+                                                    loading ?
+                                                        (
+                                                            <div className='flex text-center justify-center items-center'>
+                                                                <ColorRing
+                                                                    visible={true}
+                                                                    height="80"
+                                                                    width="80"
+                                                                    ariaLabel="blocks-loading"
+                                                                    wrapperStyle={{}}
+                                                                    wrapperClass="blocks-wrapper"
+                                                                    colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
+                                                                />
+                                                            </div>
+                                                        )
+                                                        :
+                                                        (
+                                                            <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
+                                                                <thead>
+                                                                    <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#d41a1a] text-white">
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    {filChittagong.map((prices, index) => (
+                                                                        <tr key={index}>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
+                                                                                {index + 1}
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
+                                                                                {prices?.medicalName}
+                                                                            </td>
+                                                                            <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
+                                                                                {prices?.ksaRegular}/=
+                                                                            </td>
+                                                                        </tr>
+                                                                    ))}
+                                                                </tbody>
+                                                            </table>
+                                                        )
+                                                }
+                                            </div>
                                         </div>
                                     )
-                                    :
-                                    (
-                                        <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
-                                            <thead>
-                                                <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white">
-                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
-                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
-                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {filDhaka.map((prices, index) => (
-                                                    <tr key={index}>
-                                                        <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
-                                                            {index + 1}
-                                                        </td>
-                                                        <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                            {prices?.medicalName}
-                                                        </td>
-                                                        <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
-                                                            {prices?.ksaRegular}/=
-                                                        </td>
-                                                    </tr>
-                                                ))}
-                                            </tbody>
-                                        </table>
-                                    )
-                            }
-                        </div>
-                    </div>)
-                }
-
-
-                {/* MEDICAL CENTERS IN CHITTAGONG  */}
-                {
-                    filChittagong.length > 0 &&
-                    (
-                        <div>
-                            <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
-                                <h2 className='font-bold pb-1 text-2xl text-[#d41a1a]  text-center'>Medical Centers in Chittagong</h2>
-                            </div>
-                            <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
-                                {
-                                    loading ?
-                                        (
-                                            <div className='flex text-center justify-center items-center'>
-                                                <ColorRing
-                                                    visible={true}
-                                                    height="80"
-                                                    width="80"
-                                                    ariaLabel="blocks-loading"
-                                                    wrapperStyle={{}}
-                                                    wrapperClass="blocks-wrapper"
-                                                    colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
-                                                />
-                                            </div>
-                                        )
-                                        :
-                                        (
-                                            <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
-                                                <thead>
-                                                    <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#d41a1a] text-white">
-                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
-                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
-                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {filChittagong.map((prices, index) => (
-                                                        <tr key={index}>
-                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
-                                                                {index + 1}
-                                                            </td>
-                                                            <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                                {prices?.medicalName}
-                                                            </td>
-                                                            <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
-                                                                {prices?.ksaRegular}/=
-                                                            </td>
-                                                        </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
-                                        )
                                 }
-                            </div>
-                        </div>
-                    )
-                }
 
-                {/* MEDICAL CENTERS IN SYLHET  */}
-                {
-                    filSylhet.length > 0 &&
-                    (<div>
-                        <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
-                            <h2 className='font-bold pb-1 text-2xl text-[#225c08] text-center'>Medical Centers in Sylhet</h2>
-                        </div>
-                        <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
-                            {
-                                loading ?
+                                {/* MEDICAL CENTERS IN SYLHET  */}
+                                {
+                                    filSylhet.length > 0 &&
+                                    (<div>
+                                        <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
+                                            <h2 className='font-bold pb-1 text-2xl text-[#225c08] text-center'>Medical Centers in Sylhet</h2>
+                                        </div>
+                                        <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
+                                            {
+                                                loading ?
+                                                    (
+                                                        <div className='flex text-center justify-center items-center'>
+                                                            <ColorRing
+                                                                visible={true}
+                                                                height="80"
+                                                                width="80"
+                                                                ariaLabel="blocks-loading"
+                                                                wrapperStyle={{}}
+                                                                wrapperClass="blocks-wrapper"
+                                                                colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
+                                                            />
+                                                        </div>
+                                                    )
+                                                    :
+                                                    (
+                                                        <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
+                                                            <thead>
+                                                                <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#225c08] text-white">
+                                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
+                                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
+                                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                {filSylhet.map((prices, index) => (
+                                                                    <tr key={index}>
+                                                                        <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
+                                                                            {index + 1}
+                                                                        </td>
+                                                                        <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
+                                                                            {prices?.medicalName}
+                                                                        </td>
+                                                                        <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
+                                                                            {prices?.ksaRegular}/=
+                                                                        </td>
+                                                                    </tr>
+                                                                ))}
+                                                            </tbody>
+                                                        </table>
+                                                    )
+                                            }
+                                        </div>
+                                    </div>)
+                                }
+
+                                {/* MEDICAL CENTERS IN COMILLA  */}
+                                {
+                                    filComilla.length > 0 &&
                                     (
-                                        <div className='flex text-center justify-center items-center'>
-                                            <ColorRing
-                                                visible={true}
-                                                height="80"
-                                                width="80"
-                                                ariaLabel="blocks-loading"
-                                                wrapperStyle={{}}
-                                                wrapperClass="blocks-wrapper"
-                                                colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
-                                            />
+                                        <div>
+                                            <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
+                                                <h2 className='font-bold pb-1 text-2xl text-[#000000] text-center'>Medical Centers in Comilla</h2>
+                                            </div>
+                                            <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
+                                                {
+                                                    loading ?
+                                                        (
+                                                            <div className='flex text-center justify-center items-center'>
+                                                                <ColorRing
+                                                                    visible={true}
+                                                                    height="80"
+                                                                    width="80"
+                                                                    ariaLabel="blocks-loading"
+                                                                    wrapperStyle={{}}
+                                                                    wrapperClass="blocks-wrapper"
+                                                                    colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
+                                                                />
+                                                            </div>
+                                                        )
+                                                        :
+                                                        (
+                                                            <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
+                                                                <thead>
+                                                                    <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#000000] text-white">
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    {filComilla.map((prices, index) => (
+                                                                        <tr key={index}>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
+                                                                                {index + 1}
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
+                                                                                {prices?.medicalName}
+                                                                            </td>
+                                                                            <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
+                                                                                {prices?.ksaRegular}/=
+                                                                            </td>
+                                                                        </tr>
+                                                                    ))}
+                                                                </tbody>
+                                                            </table>
+                                                        )
+                                                }
+                                            </div>
                                         </div>
                                     )
-                                    :
-                                    (
-                                        <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
-                                            <thead>
-                                                <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#225c08] text-white">
-                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
-                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
-                                                    <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {filSylhet.map((prices, index) => (
-                                                    <tr key={index}>
-                                                        <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
-                                                            {index + 1}
-                                                        </td>
-                                                        <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                            {prices?.medicalName}
-                                                        </td>
-                                                        <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
-                                                            {prices?.ksaRegular}/=
-                                                        </td>
-                                                    </tr>
-                                                ))}
-                                            </tbody>
-                                        </table>
-                                    )
-                            }
-                        </div>
-                    </div>)
-                }
-
-                {/* MEDICAL CENTERS IN COMILLA  */}
-                {
-                    filComilla.length > 0 &&
-                    (
-                        <div>
-                            <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
-                                <h2 className='font-bold pb-1 text-2xl text-[#000000] text-center'>Medical Centers in Comilla</h2>
-                            </div>
-                            <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
-                                {
-                                    loading ?
-                                        (
-                                            <div className='flex text-center justify-center items-center'>
-                                                <ColorRing
-                                                    visible={true}
-                                                    height="80"
-                                                    width="80"
-                                                    ariaLabel="blocks-loading"
-                                                    wrapperStyle={{}}
-                                                    wrapperClass="blocks-wrapper"
-                                                    colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
-                                                />
-                                            </div>
-                                        )
-                                        :
-                                        (
-                                            <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
-                                                <thead>
-                                                    <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#000000] text-white">
-                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
-                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
-                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Slip Rate</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {filComilla.map((prices, index) => (
-                                                        <tr key={index}>
-                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
-                                                                {index + 1}
-                                                            </td>
-                                                            <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                                {prices?.medicalName}
-                                                            </td>
-                                                            <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
-                                                                {prices?.ksaRegular}/=
-                                                            </td>
-                                                        </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
-                                        )
                                 }
                             </div>
-                        </div>
-                    )
+                        )
                 }
 
 
