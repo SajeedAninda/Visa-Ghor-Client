@@ -51,7 +51,7 @@ function App() {
                   </div>
 
                   <div className="text-center font-semibold text-[#033430] mt-2 text-lg pt-2 flex items-center justify-center gap-2">
-                    <span>292 Shatabdi Center, F-17/2nd Floor <br />Inner Circular Road, Fakirapool, Motijheel, Dhaka</span>
+                    <span>F-17(1st Floor), Satabdi Center<br />292, Inner Circular Road, Fakirapool, Motijheel, Dhaka</span>
                   </div>
                 </div>
               </div>
