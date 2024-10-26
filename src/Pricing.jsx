@@ -67,7 +67,6 @@ const Pricing = () => {
 
 
                 <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
-                    <h2 className='text-semibold italic pb-1 text-lg'>*Normal Slip (Delay): 900/=</h2>
                     <h2 className='text-semibold italic pb-3 text-lg text-[#952895]'>Regular Slip Time:<span className='font-bold'> 3 to 5 Days</span></h2>
                 </div>
 
