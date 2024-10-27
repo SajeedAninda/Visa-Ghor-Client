@@ -14,7 +14,7 @@ function App() {
       <div className="bg">
         <div className='w-[80%] mx-auto h-full py-28 lg:h-screen flex flex-col lg:flex-row justify-around items-center'>
           <div className='text-center lg:text-left w-full lg:flex-1'>
-            <h1 className='text-7xl md:text-8xl lg:text-9xl font-bold'><span className='text-[#952895]'>Website</span> <br /> <span>Coming</span> <br /> <span className='text-[#0b65b2]'>Soon</span></h1>
+            <h1 className='text-7xl md:text-8xl lg:text-9xl font-bold'><span className='text-[#952895]'>Visa</span> <br /> <span>Ghor</span> <br /> <span className='text-[#0b65b2]'>Travels</span></h1>
             <em className="mt-3">If you have any Queries, Please Contact Us</em>
           </div>
 
