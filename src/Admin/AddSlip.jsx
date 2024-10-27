@@ -66,6 +66,9 @@ const AddSlip = () => {
                                 <option value="chittagong">Chittagong</option>
                                 <option value="sylhet">Sylhet</option>
                                 <option value="comilla">Comilla</option>
+                                <option value="barishal">Barishal</option>
+                                <option value="rajshahi">Rajshahi</option>
+                                <option value="coxsBazar">Cox's Bazar</option>
                             </select>
                         </div>
 

@@ -79,6 +79,9 @@ const SlipList = () => {
     let filChittagong = filteredPricing.filter(dhk => dhk.location === "chittagong");
     let filSylhet = filteredPricing.filter(dhk => dhk.location === "sylhet");
     let filComilla = filteredPricing.filter(dhk => dhk.location === "comilla");
+    let filBarishal = filteredPricing.filter(dhk => dhk.location === "barishal");
+    let filRajshahi = filteredPricing.filter(dhk => dhk.location === "rajshahi");
+    let filCox = filteredPricing.filter(dhk => dhk.location === "coxsBazar");
 
     return (
         <div className='py-18'>
@@ -153,7 +156,7 @@ const SlipList = () => {
                                                                     <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white">
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
-                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Regular Slip Rate</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Regular Slip Rate</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Edit</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Delete</th>
                                                                     </tr>
@@ -222,7 +225,7 @@ const SlipList = () => {
                                                                     <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#d41a1a] text-white">
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
-                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Regular Slip Rate</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Regular Slip Rate</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Edit</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Delete</th>
                                                                     </tr>
@@ -291,7 +294,7 @@ const SlipList = () => {
                                                                     <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#225c08] text-white">
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
-                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Regular Slip Rate</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Regular Slip Rate</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Edit</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Delete</th>
                                                                     </tr>
@@ -362,13 +365,220 @@ const SlipList = () => {
                                                                     <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#000000] text-white">
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
-                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">KSA Regular Slip Rate</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Regular Slip Rate</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Edit</th>
                                                                         <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Delete</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     {filComilla.map((prices, index) => (
+                                                                        <tr key={index}>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
+                                                                                {index + 1}
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
+                                                                                {prices?.medicalName}
+                                                                            </td>
+                                                                            <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
+                                                                                {prices?.ksaRegular}/=
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
+                                                                                <Link to={`updateSlipPricing/${prices?._id}`}>
+                                                                                    <MdEditSquare className='text-2xl' />
+                                                                                </Link>
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
+                                                                                <button onClick={() => handleSlipDelete(prices?._id)}>
+                                                                                    <MdDelete className='text-2xl' />
+                                                                                </button>
+                                                                            </td>
+                                                                        </tr>
+                                                                    ))}
+                                                                </tbody>
+                                                            </table>
+                                                        )
+                                                }
+                                            </div>
+                                        </div>
+                                    )
+                                }
+
+                                {/* PRICING IN BARISHAL  */}
+                                {
+                                    filBarishal.length > 0 &&
+                                    (
+                                        <div>
+                                            <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
+                                                <h2 className='font-bold pb-1 text-2xl text-[#6e4c18] text-center'>Medical Centers in BARISHAL</h2>
+                                            </div>
+                                            <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
+                                                {
+                                                    loading ?
+                                                        (
+                                                            <div className='flex text-center justify-center items-center'>
+                                                                <ColorRing
+                                                                    visible={true}
+                                                                    height="80"
+                                                                    width="80"
+                                                                    ariaLabel="blocks-loading"
+                                                                    wrapperStyle={{}}
+                                                                    wrapperClass="blocks-wrapper"
+                                                                    colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
+                                                                />
+                                                            </div>
+                                                        )
+                                                        :
+                                                        (
+                                                            <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
+                                                                <thead>
+                                                                    <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#6e4c18] text-white">
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Regular Slip Rate</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Edit</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Delete</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    {filBarishal.map((prices, index) => (
+                                                                        <tr key={index}>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
+                                                                                {index + 1}
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
+                                                                                {prices?.medicalName}
+                                                                            </td>
+                                                                            <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
+                                                                                {prices?.ksaRegular}/=
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
+                                                                                <Link to={`updateSlipPricing/${prices?._id}`}>
+                                                                                    <MdEditSquare className='text-2xl' />
+                                                                                </Link>
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
+                                                                                <button onClick={() => handleSlipDelete(prices?._id)}>
+                                                                                    <MdDelete className='text-2xl' />
+                                                                                </button>
+                                                                            </td>
+                                                                        </tr>
+                                                                    ))}
+                                                                </tbody>
+                                                            </table>
+                                                        )
+                                                }
+                                            </div>
+                                        </div>
+                                    )
+                                }
+
+                                {/* PRICING IN RAJSHAHI  */}
+                                {
+                                    filRajshahi.length > 0 &&
+                                    (
+                                        <div>
+                                            <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
+                                                <h2 className='font-bold pb-1 text-2xl text-[#0b1235] text-center'>Medical Centers in RAJSHAHI</h2>
+                                            </div>
+                                            <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
+                                                {
+                                                    loading ?
+                                                        (
+                                                            <div className='flex text-center justify-center items-center'>
+                                                                <ColorRing
+                                                                    visible={true}
+                                                                    height="80"
+                                                                    width="80"
+                                                                    ariaLabel="blocks-loading"
+                                                                    wrapperStyle={{}}
+                                                                    wrapperClass="blocks-wrapper"
+                                                                    colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
+                                                                />
+                                                            </div>
+                                                        )
+                                                        :
+                                                        (
+                                                            <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
+                                                                <thead>
+                                                                    <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#0b1235] text-white">
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Regular Slip Rate</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Edit</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Delete</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    {filRajshahi.map((prices, index) => (
+                                                                        <tr key={index}>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
+                                                                                {index + 1}
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
+                                                                                {prices?.medicalName}
+                                                                            </td>
+                                                                            <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
+                                                                                {prices?.ksaRegular}/=
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
+                                                                                <Link to={`updateSlipPricing/${prices?._id}`}>
+                                                                                    <MdEditSquare className='text-2xl' />
+                                                                                </Link>
+                                                                            </td>
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold text-[#952895]">
+                                                                                <button onClick={() => handleSlipDelete(prices?._id)}>
+                                                                                    <MdDelete className='text-2xl' />
+                                                                                </button>
+                                                                            </td>
+                                                                        </tr>
+                                                                    ))}
+                                                                </tbody>
+                                                            </table>
+                                                        )
+                                                }
+                                            </div>
+                                        </div>
+                                    )
+                                }
+
+                                {/* PRICING IN Coxs Bazar  */}
+                                {
+                                    filCox.length > 0 &&
+                                    (
+                                        <div>
+                                            <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto'>
+                                                <h2 className='font-bold pb-1 text-2xl text-[#5f6417] text-center'>Medical Centers in Cox's Bazar</h2>
+                                            </div>
+                                            <div className='w-[100%] md:w-[90%] lg:w-[80%] py-6 mx-auto overflow-x-auto'>
+                                                {
+                                                    loading ?
+                                                        (
+                                                            <div className='flex text-center justify-center items-center'>
+                                                                <ColorRing
+                                                                    visible={true}
+                                                                    height="80"
+                                                                    width="80"
+                                                                    ariaLabel="blocks-loading"
+                                                                    wrapperStyle={{}}
+                                                                    wrapperClass="blocks-wrapper"
+                                                                    colors={['#0b64b2c7', '#952895', '#952895', '#0b64b2c7', '#0b64b2c7']}
+                                                                />
+                                                            </div>
+                                                        )
+                                                        :
+                                                        (
+                                                            <table className="min-w-full table-auto border-collapse border border-[#0b65b2]">
+                                                                <thead>
+                                                                    <tr className="bg-gradient-to-r from-[#0b64b2c7] to-[#b0b92d] text-white">
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">#SL</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Medical Center Name</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Regular Slip Rate</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Edit</th>
+                                                                        <th className="py-4 px-6 md:px-10 text-center text-xl border border-white">Delete</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    {filCox.map((prices, index) => (
                                                                         <tr key={index}>
                                                                             <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
                                                                                 {index + 1}
