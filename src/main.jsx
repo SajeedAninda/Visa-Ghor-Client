@@ -15,6 +15,7 @@ import UpdateList from './Admin/UpdateList.jsx';
 import AuthenticationProvider from './Authentication/AuthenticationProvider.jsx';
 import Login from './Admin/Login.jsx';
 import PrivateRoute from './PrivateRoute.jsx';
+import OurServices from './OurServices.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/slip_price" element={<Pricing />} />
+          <Route path="/our_services" element={<OurServices />} />
           <Route path="/air_ticket_prices" element={<AirTicketPrices />} />
           <Route path="/tourist_visa_prices" element={<TouristVisaPrices />} />
           <Route path="/other_services" element={<OtherServices />} />

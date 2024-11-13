@@ -59,6 +59,13 @@ function App() {
           </div>
         </div>
 
+        <div className="flex justify-center items-center py-6">
+          <Link to={"/our_services"} className="flex justify-center items-center" >
+            <button className="py-4 px-8 text-[18px] font-bold rounded-md bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white font bold hover:bg-gradient-to-r hover:from-[#952895] hover:to-[#0b64b2c7]">
+              Our Services
+            </button>
+          </Link>
+        </div>
         <div className="w-[80%] mx-auto grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-6 pb-8">
           <Link to={"/slip_price"} className="flex justify-center items-center" >
             <button className="py-3 px-6 rounded-md bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white font bold hover:bg-gradient-to-r hover:from-[#952895] hover:to-[#0b64b2c7]">
