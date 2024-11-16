@@ -69,9 +69,9 @@ const Pricing = () => {
                 </div>
 
 
-                <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto mb-6'>
+                {/* <div className='w-[100%] md:w-[90%] lg:w-[80%] mx-auto overflow-x-auto mb-6'>
                     <h2 className='text-semibold italic pb-3 text-lg text-[#952895]'>Normal Slip(Night):<span className='font-bold'> Comilla 800/=, Dhaka 900/=, Sylhet 1100/=</span></h2>
-                </div>
+                </div> */}
 
 
                 {
