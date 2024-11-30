@@ -8,7 +8,7 @@ const NewPricing = () => {
     let [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("https://visa-ghor-server.vercel.app/slipPrices")
+        fetch("/full_data.json")
             .then(res => res.json())
             .then(json => {
                 const sortedPricing = json.sort((a, b) =>
@@ -52,7 +52,7 @@ const NewPricing = () => {
     return (
         <div className='py-18'>
             <div className='py-12'>
-                <h1 className='text-4xl md:text-5xl font-bold text-[#952895] text-center'>New Choice Slip Pricing</h1>
+                <h1 className='text-4xl md:text-5xl font-bold text-[#952895] text-center'>Full Auto Choice Slip Pricing</h1>
                 <p className='text-md w-[60%] mt-3 text-[] mx-auto md:text-lg lg:text-xl font-bold text-center text-[#0b65b2]'>View and compare the prices of various medicals before making a choice.</p>
 
                 {/* Search bar */}
@@ -489,13 +489,6 @@ const NewPricing = () => {
                             </div>
                         )
                 }
-
-
-                <Link className="flex justify-center items-center pb-8" to={"/"}>
-                    <button className="py-3 px-6 rounded-md bg-gradient-to-r from-[#0b64b2c7] to-[#952895] text-white font bold hover:bg-gradient-to-r hover:from-[#952895] hover:to-[#0b64b2c7]">
-                        Back to Home
-                    </button>
-                </Link>
             </div>
         </div>
     );
