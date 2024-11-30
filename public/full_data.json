@@ -158,37 +158,37 @@
     {
         "id": 27,
         "medicalName": "Jeeshan Check-up Services",
-        "ksaRegular": 4000,
+        "ksaRegular": 2500,
         "location": "comilla"
     },
     {
         "id": 28,
         "medicalName": "Medi Check Medical Service Limited",
-        "ksaRegular": 4000,
+        "ksaRegular": 2500,
         "location": "comilla"
     },
     {
         "id": 29,
         "medicalName": "Medi Health Medical Center",
-        "ksaRegular": 5000,
+        "ksaRegular": 4500,
         "location": "comilla"
     },
     {
         "id": 30,
         "medicalName": "Reda Hamzah Diagnostic",
-        "ksaRegular": 4000,
+        "ksaRegular": 3000,
         "location": "comilla"
     },
     {
         "id": 31,
         "medicalName": "Tabuk Medical Center",
-        "ksaRegular": 5000,
+        "ksaRegular": 4500,
         "location": "comilla"
     },
     {
         "id": 32,
         "medicalName": "TRUST MEDICAL & DIAGNOSTIC CENTER",
-        "ksaRegular": 6500,
+        "ksaRegular": 6000,
         "location": "comilla"
     },
     {
@@ -572,7 +572,7 @@
     {
         "id": 96,
         "medicalName": "Medinova Medical Services Ltd",
-        "ksaRegular": 6000,
+        "ksaRegular": 5500,
         "location": "dhaka"
     },
     {
@@ -830,13 +830,13 @@
     {
         "id": 139,
         "medicalName": "A. Rahman Medical Center",
-        "ksaRegular": 5500,
+        "ksaRegular": 3500,
         "location": "sylhet"
     },
     {
         "id": 140,
         "medicalName": "ABC Diagnostic Center",
-        "ksaRegular": 5500,
+        "ksaRegular": 3500,
         "location": "sylhet"
     },
     {
@@ -848,19 +848,19 @@
     {
         "id": 142,
         "medicalName": "Al-Khaled Medical Services",
-        "ksaRegular": 5500,
+        "ksaRegular": 3500,
         "location": "sylhet"
     },
     {
         "id": 143,
         "medicalName": "Green Crescent Medilab",
-        "ksaRegular": 5500,
+        "ksaRegular": 3500,
         "location": "sylhet"
     },
     {
         "id": 144,
         "medicalName": "J B Medical Center Ltd",
-        "ksaRegular": 5500,
+        "ksaRegular": 3500,
         "location": "sylhet"
     },
     {
@@ -872,55 +872,7 @@
     {
         "id": 146,
         "medicalName": "Sylhet City Medical Centre",
-        "ksaRegular": 5500,
-        "location": "sylhet"
-    },
-    {
-        "id": 147,
-        "medicalName": "Sylhet City Medical Centre",
-        "ksaRegular": 5500,
-        "location": "sylhet"
-    },
-    {
-        "id": 148,
-        "medicalName": "Medinova Medical Services",
-        "ksaRegular": 5500,
-        "location": "sylhet"
-    },
-    {
-        "id": 149,
-        "medicalName": "J B Medical Center Ltd",
-        "ksaRegular": 5500,
-        "location": "sylhet"
-    },
-    {
-        "id": 150,
-        "medicalName": "Green Crescent Medilab",
-        "ksaRegular": 5500,
-        "location": "sylhet"
-    },
-    {
-        "id": 151,
-        "medicalName": "Al-Khaled Medical Services",
-        "ksaRegular": 5500,
-        "location": "sylhet"
-    },
-    {
-        "id": 152,
-        "medicalName": "Al-Hamad Medical Centre Ltd",
-        "ksaRegular": 5500,
-        "location": "sylhet"
-    },
-    {
-        "id": 153,
-        "medicalName": "ABC Diagnostic Center",
-        "ksaRegular": 5500,
-        "location": "sylhet"
-    },
-    {
-        "id": 154,
-        "medicalName": "A. Rahman Medical Center",
-        "ksaRegular": 5500,
+        "ksaRegular": 4000,
         "location": "sylhet"
     }
 ]
