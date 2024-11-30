@@ -1,0 +1,926 @@
+[
+    {
+        "id": 1,
+        "medicalName": "Alif Check-up Services",
+        "ksaRegular": 5000,
+        "location": "barishal"
+    },
+    {
+        "id": 2,
+        "medicalName": "Barishal Central Diagnostic Center",
+        "ksaRegular": 5000,
+        "location": "barishal"
+    },
+    {
+        "id": 3,
+        "medicalName": "Yaqeen Medical Centre",
+        "ksaRegular": 5000,
+        "location": "barishal"
+    },
+    {
+        "id": 4,
+        "medicalName": "Yaqeen Medical Centre",
+        "ksaRegular": 5000,
+        "location": "barishal"
+    },
+    {
+        "id": 5,
+        "medicalName": "Barishal Central Diagnostic Center",
+        "ksaRegular": 5000,
+        "location": "barishal"
+    },
+    {
+        "id": 6,
+        "medicalName": "Alif Check-up Services",
+        "ksaRegular": 5000,
+        "location": "barishal"
+    },
+    {
+        "id": 7,
+        "medicalName": "AKS Khan Diagnostics Ltd",
+        "ksaRegular": 5500,
+        "location": "chitagong"
+    },
+    {
+        "id": 8,
+        "medicalName": "Ali Shah Diagnostic & Specialish Doctors Consultation Centre",
+        "ksaRegular": 4100,
+        "location": "chitagong"
+    },
+    {
+        "id": 9,
+        "medicalName": "Apex Diagnostic Services (pvt) Ltd.",
+        "ksaRegular": 3500,
+        "location": "chitagong"
+    },
+    {
+        "id": 10,
+        "medicalName": "Check Up Diagnostic Centre",
+        "ksaRegular": 4200,
+        "location": "chitagong"
+    },
+    {
+        "id": 11,
+        "medicalName": "Green Crescent Medical Diagnostic",
+        "ksaRegular": 4000,
+        "location": "chitagong"
+    },
+    {
+        "id": 12,
+        "medicalName": "Human Diagnostic and Medical Check-up Center",
+        "ksaRegular": 5000,
+        "location": "chitagong"
+    },
+    {
+        "id": 13,
+        "medicalName": "Medical Point Diagnostic Center",
+        "ksaRegular": 4000,
+        "location": "chitagong"
+    },
+    {
+        "id": 14,
+        "medicalName": "Medicare Medical Check-up Centre",
+        "ksaRegular": 5000,
+        "location": "chitagong"
+    },
+    {
+        "id": 15,
+        "medicalName": "Sunway Medical Centre",
+        "ksaRegular": 6000,
+        "location": "chitagong"
+    },
+    {
+        "id": 16,
+        "medicalName": "The Urbane Clinical Services",
+        "ksaRegular": 4000,
+        "location": "chitagong"
+    },
+    {
+        "id": 17,
+        "medicalName": "Turkey Medical Services",
+        "ksaRegular": 6500,
+        "location": "chitagong"
+    },
+    {
+        "id": 18,
+        "medicalName": "AL MAN MEDICAL CENTER",
+        "ksaRegular": 6500,
+        "location": "cox's bazar"
+    },
+    {
+        "id": 19,
+        "medicalName": "Bay Medical Centre",
+        "ksaRegular": 6500,
+        "location": "cox's bazar"
+    },
+    {
+        "id": 20,
+        "medicalName": "Chemon Health Care",
+        "ksaRegular": 6500,
+        "location": "cox's bazar"
+    },
+    {
+        "id": 21,
+        "medicalName": "MAX MEDICAL CENTER",
+        "ksaRegular": 6500,
+        "location": "cox's bazar"
+    },
+    {
+        "id": 22,
+        "medicalName": "Shouq Medical Point",
+        "ksaRegular": 6500,
+        "location": "cox's bazar"
+    },
+    {
+        "id": 23,
+        "medicalName": "Shouq Medical Point",
+        "ksaRegular": 6500,
+        "location": "cox's bazar"
+    },
+    {
+        "id": 24,
+        "medicalName": "MAX MEDICAL CENTER",
+        "ksaRegular": 5000,
+        "location": "cox's bazar"
+    },
+    {
+        "id": 25,
+        "medicalName": "Chemon Health Care",
+        "ksaRegular": 4500,
+        "location": "cox's bazar"
+    },
+    {
+        "id": 26,
+        "medicalName": "Bay Medical Centre",
+        "ksaRegular": 5000,
+        "location": "cox's bazar"
+    },
+    {
+        "id": 27,
+        "medicalName": "Jeeshan Check-up Services",
+        "ksaRegular": 4000,
+        "location": "cumilla"
+    },
+    {
+        "id": 28,
+        "medicalName": "Medi Check Medical Service Limited",
+        "ksaRegular": 4000,
+        "location": "cumilla"
+    },
+    {
+        "id": 29,
+        "medicalName": "Medi Health Medical Center",
+        "ksaRegular": 5000,
+        "location": "cumilla"
+    },
+    {
+        "id": 30,
+        "medicalName": "Reda Hamzah Diagnostic",
+        "ksaRegular": 4000,
+        "location": "cumilla"
+    },
+    {
+        "id": 31,
+        "medicalName": "Tabuk Medical Center",
+        "ksaRegular": 5000,
+        "location": "cumilla"
+    },
+    {
+        "id": 32,
+        "medicalName": "TRUST MEDICAL & DIAGNOSTIC CENTER",
+        "ksaRegular": 6500,
+        "location": "cumilla"
+    },
+    {
+        "id": 33,
+        "medicalName": "AL MAN MEDICAL CENTER",
+        "ksaRegular": 6500,
+        "location": "Cox's Bazar"
+    },
+    {
+        "id": 34,
+        "medicalName": "Al-Madina Medical Services",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 35,
+        "medicalName": "Green Crescent Health Services",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 36,
+        "medicalName": "Saimon Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 37,
+        "medicalName": "Gulshan Medicare - Dhaka",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 38,
+        "medicalName": "Saudi Bangladesh Services Company",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 39,
+        "medicalName": "Arabian Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 40,
+        "medicalName": "Ibn Sina Medical Check Up Unit",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 41,
+        "medicalName": "Al-Humyra Health Centre Ltd",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 42,
+        "medicalName": "Al-Riyadh Medical Check up",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 43,
+        "medicalName": "Chandshi Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 44,
+        "medicalName": "Fairways Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 45,
+        "medicalName": "Gulf Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 46,
+        "medicalName": "Health Care Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 47,
+        "medicalName": "Muscat Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 48,
+        "medicalName": "Makkha Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 49,
+        "medicalName": "National Medical Center Limited",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 50,
+        "medicalName": "Pulse Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 51,
+        "medicalName": "Pushpo Clinic",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 52,
+        "medicalName": "International Health Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 53,
+        "medicalName": "Al Hayatt Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 54,
+        "medicalName": "Al-Nahda Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 55,
+        "medicalName": "The Classic Medical Centre Ltd",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 56,
+        "medicalName": "Allied Diagnostics Ltd",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 57,
+        "medicalName": "Paradyne Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 58,
+        "medicalName": "Ibn Rushd Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 59,
+        "medicalName": "Unique Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 60,
+        "medicalName": "Standard Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 61,
+        "medicalName": "Leading Health Check up",
+        "ksaRegular": 7000,
+        "location": "dhaka"
+    },
+    {
+        "id": 62,
+        "medicalName": "SKN Health Services",
+        "ksaRegular": 6500,
+        "location": "dhaka"
+    },
+    {
+        "id": 63,
+        "medicalName": "Transworld Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 64,
+        "medicalName": "Al Mubasher Medical Diagnostic Services",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 65,
+        "medicalName": "Orbitals Medical Centre Limited",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 66,
+        "medicalName": "Bashundhara Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 67,
+        "medicalName": "Crystal Diagnostic",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 68,
+        "medicalName": "Tulip Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 69,
+        "medicalName": "LAB QUEST LIMITED",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 70,
+        "medicalName": "NAFA MEDICAL CENTRE",
+        "ksaRegular": 8000,
+        "location": "dhaka"
+    },
+    {
+        "id": 71,
+        "medicalName": "Confidence Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 72,
+        "medicalName": "STAR MEDICAL AND DIAGNOSTIC CENTER",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 73,
+        "medicalName": "ADVANCE HEALTH CARE",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 74,
+        "medicalName": "Kent Medical Services Ltd.",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 75,
+        "medicalName": "Malancha Medical Services Ltd.",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 76,
+        "medicalName": "Al Mashoor Diagnostic Services",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 77,
+        "medicalName": "Perlov Medical Services Ltd.",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 78,
+        "medicalName": "The Eureka Diagnostic & Medical Services",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 79,
+        "medicalName": "DAWA MEDICAL CENTRE",
+        "ksaRegular": 6500,
+        "location": "dhaka"
+    },
+    {
+        "id": 80,
+        "medicalName": "IBN OMAR MEDICAL AND DIAGNOSTIC CENTER",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 81,
+        "medicalName": "Saadiq Medical Services Ltd",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 82,
+        "medicalName": "Zain Medical Limited",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 83,
+        "medicalName": "INDEX DIAGNOSTIC CENTER",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 84,
+        "medicalName": "Safa Diagnostic Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 85,
+        "medicalName": "Khoulud Medical Check-up",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 86,
+        "medicalName": "Evergreen Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 87,
+        "medicalName": "MediTest Medical Services",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 88,
+        "medicalName": "RELYON MEDICARE",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 89,
+        "medicalName": "Healthcare Diagnostic Center Ltd",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 90,
+        "medicalName": "Albustan Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 91,
+        "medicalName": "Global Medicare Diagnostics Ltd.",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 92,
+        "medicalName": "Mediquest Diagnostics Ltd",
+        "ksaRegular": 8500,
+        "location": "dhaka"
+    },
+    {
+        "id": 93,
+        "medicalName": "MEDILINE HEALTH MANAGEMENT LTD",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 94,
+        "medicalName": "Paramount Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 95,
+        "medicalName": "Namirah Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 96,
+        "medicalName": "Medinova Medical Services Ltd",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 97,
+        "medicalName": "Nova Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 98,
+        "medicalName": "Ishtiyaq Medical Center",
+        "ksaRegular": 8000,
+        "location": "dhaka"
+    },
+    {
+        "id": 99,
+        "medicalName": "Dhaka Crown Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 100,
+        "medicalName": "Stemz Helath Care (BD)ltd",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 101,
+        "medicalName": "Al Jami Diagnostic Centre",
+        "ksaRegular": 7500,
+        "location": "dhaka"
+    },
+    {
+        "id": 102,
+        "medicalName": "Overseas Health Checkup Ltd",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 103,
+        "medicalName": "Nazrul Islam Diagnostic",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 104,
+        "medicalName": "Mostafa Health Care",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 105,
+        "medicalName": "PACIFIC MEDICAL & DIAGNOSTIC CENTER",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 106,
+        "medicalName": "Saam Health Checkup Ltd",
+        "ksaRegular": 7500,
+        "location": "dhaka"
+    },
+    {
+        "id": 107,
+        "medicalName": "Quest Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 108,
+        "medicalName": "Praava Health",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 109,
+        "medicalName": "SARVOSHRESTHA MEDICAL CENTER",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 110,
+        "medicalName": "SARA MEDICAL CENTER",
+        "ksaRegular": 6500,
+        "location": "dhaka"
+    },
+    {
+        "id": 111,
+        "medicalName": "Mohammdi Healthcare Systems Pvt. Ltd.",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 112,
+        "medicalName": "Life Diagnostic Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 113,
+        "medicalName": "Mohaimid Medical Center",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 114,
+        "medicalName": "ALIF-LAM-MIM HEALTH SERVICES LTD",
+        "ksaRegular": 9500,
+        "location": "dhaka"
+    },
+    {
+        "id": 115,
+        "medicalName": "WORLD HORIZON MEDICAL SERVICES LTD",
+        "ksaRegular": 8000,
+        "location": "dhaka"
+    },
+    {
+        "id": 116,
+        "medicalName": "Sahara Medical Center",
+        "ksaRegular": 9500,
+        "location": "dhaka"
+    },
+    {
+        "id": 117,
+        "medicalName": "Smart Medical Centre",
+        "ksaRegular": 9000,
+        "location": "dhaka"
+    },
+    {
+        "id": 118,
+        "medicalName": "AL-BAHA MEDICAL CENTER",
+        "ksaRegular": 10000,
+        "location": "dhaka"
+    },
+    {
+        "id": 119,
+        "medicalName": "AMIR JAHAN MEDICAL CENTER",
+        "ksaRegular": 11000,
+        "location": "dhaka"
+    },
+    {
+        "id": 120,
+        "medicalName": "PHOENIX MEDICAL CENTER",
+        "ksaRegular": 11000,
+        "location": "dhaka"
+    },
+    {
+        "id": 121,
+        "medicalName": "ANAS MEDICAL CENTER",
+        "ksaRegular": 11000,
+        "location": "dhaka"
+    },
+    {
+        "id": 122,
+        "medicalName": "ALTASHKHIS MARKAZ LIMITED",
+        "ksaRegular": 10500,
+        "location": "dhaka"
+    },
+    {
+        "id": 123,
+        "medicalName": "YADAN MEDICAL",
+        "ksaRegular": 10500,
+        "location": "dhaka"
+    },
+    {
+        "id": 124,
+        "medicalName": "Moon Check-up OPC",
+        "ksaRegular": 9500,
+        "location": "dhaka"
+    },
+    {
+        "id": 125,
+        "medicalName": "Al Arouba Medical Services P.Ltd",
+        "ksaRegular": 10500,
+        "location": "dhaka"
+    },
+    {
+        "id": 126,
+        "medicalName": "MIX_ AMIR JAHAN - PHOENIX - ANAS",
+        "ksaRegular": 11000,
+        "location": "dhaka"
+    },
+    {
+        "id": 127,
+        "medicalName": "Mix_ Moon, Al Arouba - Al-taskis",
+        "ksaRegular": 10500,
+        "location": "dhaka"
+    },
+    {
+        "id": 128,
+        "medicalName": "MIX_ AMIR JAHAN, PHOENIX, ANAS, Moon, Al Arouba, Al-taskis",
+        "ksaRegular": 10500,
+        "location": "dhaka"
+    },
+    {
+        "id": 129,
+        "medicalName": "Rx Medical Centre",
+        "ksaRegular": 6000,
+        "location": "dhaka"
+    },
+    {
+        "id": 130,
+        "medicalName": "AL ALI DIAGNOSTIC CENTER",
+        "ksaRegular": 7500,
+        "location": "rajshahi"
+    },
+    {
+        "id": 131,
+        "medicalName": "AL- NAHIYAN DIAGNOSTIC & MEDICAL SERVICES",
+        "ksaRegular": 7500,
+        "location": "rajshahi"
+    },
+    {
+        "id": 132,
+        "medicalName": "Hope Medical Centre",
+        "ksaRegular": 7500,
+        "location": "rajshahi"
+    },
+    {
+        "id": 133,
+        "medicalName": "Labaid Limited (Diagnostics)",
+        "ksaRegular": 7500,
+        "location": "rajshahi"
+    },
+    {
+        "id": 134,
+        "medicalName": "Nazowa Medical Centre",
+        "ksaRegular": 8500,
+        "location": "rajshahi"
+    },
+    {
+        "id": 135,
+        "medicalName": "SATATA MEDICAL CHECKUP CENTER",
+        "ksaRegular": 7500,
+        "location": "rajshahi"
+    },
+    {
+        "id": 136,
+        "medicalName": "AL- NAHIYAN DIAGNOSTIC & MEDICAL SERVICES",
+        "ksaRegular": 5000,
+        "location": "rajshahi"
+    },
+    {
+        "id": 137,
+        "medicalName": "Hope Medical Centre",
+        "ksaRegular": 5000,
+        "location": "rajshahi"
+    },
+    {
+        "id": 138,
+        "medicalName": "Nazowa Medical Centre",
+        "ksaRegular": 5000,
+        "location": "rajshahi"
+    },
+    {
+        "id": 139,
+        "medicalName": "A. Rahman Medical Center",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 140,
+        "medicalName": "ABC Diagnostic Center",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 141,
+        "medicalName": "Al-Hamad Medical Centre Ltd",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 142,
+        "medicalName": "Al-Khaled Medical Services",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 143,
+        "medicalName": "Green Crescent Medilab",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 144,
+        "medicalName": "J B Medical Center Ltd",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 145,
+        "medicalName": "Medinova Medical Services",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 146,
+        "medicalName": "Sylhet City Medical Centre",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 147,
+        "medicalName": "Sylhet City Medical Centre",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 148,
+        "medicalName": "Medinova Medical Services",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 149,
+        "medicalName": "J B Medical Center Ltd",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 150,
+        "medicalName": "Green Crescent Medilab",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 151,
+        "medicalName": "Al-Khaled Medical Services",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 152,
+        "medicalName": "Al-Hamad Medical Centre Ltd",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 153,
+        "medicalName": "ABC Diagnostic Center",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    },
+    {
+        "id": 154,
+        "medicalName": "A. Rahman Medical Center",
+        "ksaRegular": 5500,
+        "location": "sylhet"
+    }
+]
