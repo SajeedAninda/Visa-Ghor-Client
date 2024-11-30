@@ -2,36 +2,36 @@
     {
         "id": 1,
         "medicalName": "Alif Check-up Services",
-        "ksaRegular": 5000,
+        "ksaRegular": 4500,
         "location": "barishal"
     },
     {
         "id": 2,
         "medicalName": "Barishal Central Diagnostic Center",
-        "ksaRegular": 5000,
+        "ksaRegular": 4500,
         "location": "barishal"
     },
     {
         "id": 3,
         "medicalName": "Yaqeen Medical Centre",
-        "ksaRegular": 5000,
+        "ksaRegular": 4500,
         "location": "barishal"
     },
     {
         "id": 4,
-        "medicalName": "Yaqeen Medical Centre",
+        "medicalName": "Yaqeen Medical Centre   ** (KUWAIT) **",
         "ksaRegular": 5000,
         "location": "barishal"
     },
     {
         "id": 5,
-        "medicalName": "Barishal Central Diagnostic Center",
+        "medicalName": "Barishal Central Diagnostic Center  ** (KUWAIT) **",
         "ksaRegular": 5000,
         "location": "barishal"
     },
     {
         "id": 6,
-        "medicalName": "Alif Check-up Services",
+        "medicalName": "Alif Check-up Services  ** (KUWAIT) **",
         "ksaRegular": 5000,
         "location": "barishal"
     },
