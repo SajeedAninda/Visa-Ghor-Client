@@ -131,7 +131,21 @@ const NewPricing = () => {
                                                                             {index + 1}
                                                                         </td>
                                                                         <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                                            {prices?.medicalName}
+                                                                            {
+                                                                                prices?.medicalName.endsWith("(KSA)") ? (
+                                                                                    <>
+                                                                                        {prices?.medicalName.replace("(KSA)", "")}
+                                                                                        <span className="text-red-500 font-bold">(KSA)</span>
+                                                                                    </>
+                                                                                ) : prices?.medicalName.endsWith("(KUWAIT)") ? (
+                                                                                    <>
+                                                                                        {prices?.medicalName.replace("(KUWAIT)", "")}
+                                                                                        <span className="text-blue-500 font-bold">(KUWAIT)</span>
+                                                                                    </>
+                                                                                ) : (
+                                                                                    prices?.medicalName
+                                                                                )
+                                                                            }
                                                                         </td>
                                                                         <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
                                                                             {prices?.ksaRegular}/=
@@ -188,7 +202,21 @@ const NewPricing = () => {
                                                                                 {index + 1}
                                                                             </td>
                                                                             <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                                                {prices?.medicalName}
+                                                                                {
+                                                                                    prices?.medicalName.endsWith("(KSA)") ? (
+                                                                                        <>
+                                                                                            {prices?.medicalName.replace("(KSA)", "")}
+                                                                                            <span className="text-red-500 font-bold">(KSA)</span>
+                                                                                        </>
+                                                                                    ) : prices?.medicalName.endsWith("(KUWAIT)") ? (
+                                                                                        <>
+                                                                                            {prices?.medicalName.replace("(KUWAIT)", "")}
+                                                                                            <span className="text-blue-500 font-bold">(KUWAIT)</span>
+                                                                                        </>
+                                                                                    ) : (
+                                                                                        prices?.medicalName
+                                                                                    )
+                                                                                }
                                                                             </td>
                                                                             <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
                                                                                 {prices?.ksaRegular}/=
@@ -244,7 +272,21 @@ const NewPricing = () => {
                                                                             {index + 1}
                                                                         </td>
                                                                         <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                                            {prices?.medicalName}
+                                                                            {
+                                                                                prices?.medicalName.endsWith("(KSA)") ? (
+                                                                                    <>
+                                                                                        {prices?.medicalName.replace("(KSA)", "")}
+                                                                                        <span className="text-red-500 font-bold">(KSA)</span>
+                                                                                    </>
+                                                                                ) : prices?.medicalName.endsWith("(KUWAIT)") ? (
+                                                                                    <>
+                                                                                        {prices?.medicalName.replace("(KUWAIT)", "")}
+                                                                                        <span className="text-blue-500 font-bold">(KUWAIT)</span>
+                                                                                    </>
+                                                                                ) : (
+                                                                                    prices?.medicalName
+                                                                                )
+                                                                            }
                                                                         </td>
                                                                         <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
                                                                             {prices?.ksaRegular}/=
@@ -300,7 +342,21 @@ const NewPricing = () => {
                                                                                 {index + 1}
                                                                             </td>
                                                                             <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                                                {prices?.medicalName}
+                                                                                {
+                                                                                    prices?.medicalName.endsWith("(KSA)") ? (
+                                                                                        <>
+                                                                                            {prices?.medicalName.replace("(KSA)", "")}
+                                                                                            <span className="text-red-500 font-bold">(KSA)</span>
+                                                                                        </>
+                                                                                    ) : prices?.medicalName.endsWith("(KUWAIT)") ? (
+                                                                                        <>
+                                                                                            {prices?.medicalName.replace("(KUWAIT)", "")}
+                                                                                            <span className="text-blue-500 font-bold">(KUWAIT)</span>
+                                                                                        </>
+                                                                                    ) : (
+                                                                                        prices?.medicalName
+                                                                                    )
+                                                                                }
                                                                             </td>
                                                                             <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
                                                                                 {prices?.ksaRegular}/=
@@ -353,11 +409,25 @@ const NewPricing = () => {
                                                                 <tbody>
                                                                     {filBarishal.map((prices, index) => (
                                                                         <tr key={index}>
-                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[#0b65b2]">
+                                                                            <td className="py-4 px-6 md:px-10 text-center border border-[rgb(11,101,178)]">
                                                                                 {index + 1}
                                                                             </td>
                                                                             <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                                                {prices?.medicalName}
+                                                                                {
+                                                                                    prices?.medicalName.endsWith("(KSA)") ? (
+                                                                                        <>
+                                                                                            {prices?.medicalName.replace("(KSA)", "")}
+                                                                                            <span className="text-red-500 font-bold">(KSA)</span>
+                                                                                        </>
+                                                                                    ) : prices?.medicalName.endsWith("(KUWAIT)") ? (
+                                                                                        <>
+                                                                                            {prices?.medicalName.replace("(KUWAIT)", "")}
+                                                                                            <span className="text-blue-500 font-bold">(KUWAIT)</span>
+                                                                                        </>
+                                                                                    ) : (
+                                                                                        prices?.medicalName
+                                                                                    )
+                                                                                }
                                                                             </td>
                                                                             <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
                                                                                 {prices?.ksaRegular}/=
@@ -414,7 +484,21 @@ const NewPricing = () => {
                                                                                 {index + 1}
                                                                             </td>
                                                                             <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                                                {prices?.medicalName}
+                                                                                {
+                                                                                    prices?.medicalName.endsWith("(KSA)") ? (
+                                                                                        <>
+                                                                                            {prices?.medicalName.replace("(KSA)", "")}
+                                                                                            <span className="text-red-500 font-bold">(KSA)</span>
+                                                                                        </>
+                                                                                    ) : prices?.medicalName.endsWith("(KUWAIT)") ? (
+                                                                                        <>
+                                                                                            {prices?.medicalName.replace("(KUWAIT)", "")}
+                                                                                            <span className="text-blue-500 font-bold">(KUWAIT)</span>
+                                                                                        </>
+                                                                                    ) : (
+                                                                                        prices?.medicalName
+                                                                                    )
+                                                                                }
                                                                             </td>
                                                                             <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
                                                                                 {prices?.ksaRegular}/=
@@ -471,7 +555,21 @@ const NewPricing = () => {
                                                                                 {index + 1}
                                                                             </td>
                                                                             <td className="py-4 px-6 md:px-10 text-center font-medium border border-[#0b65b2]">
-                                                                                {prices?.medicalName}
+                                                                                {
+                                                                                    prices?.medicalName.endsWith("(KSA)") ? (
+                                                                                        <>
+                                                                                            {prices?.medicalName.replace("(KSA)", "")}
+                                                                                            <span className="text-red-500 font-bold">(KSA)</span>
+                                                                                        </>
+                                                                                    ) : prices?.medicalName.endsWith("(KUWAIT)") ? (
+                                                                                        <>
+                                                                                            {prices?.medicalName.replace("(KUWAIT)", "")}
+                                                                                            <span className="text-blue-500 font-bold">(KUWAIT)</span>
+                                                                                        </>
+                                                                                    ) : (
+                                                                                        prices?.medicalName
+                                                                                    )
+                                                                                }
                                                                             </td>
                                                                             <td className={`py-4 px-6 md:px-10 text-center border border-[#0b65b2] text-lg font-bold ${getColorForKSA(prices?.ksaRegular)}`}>
                                                                                 {prices?.ksaRegular}/=
