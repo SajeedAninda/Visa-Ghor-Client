@@ -1,37 +1,37 @@
 [
     {
         "id": 1,
-        "medicalName": "Alif Check-up Services",
+        "medicalName": "Alif Check-up Services (KSA)",
         "ksaRegular": 4500,
         "location": "barishal"
     },
     {
         "id": 2,
-        "medicalName": "Barishal Central Diagnostic Center",
+        "medicalName": "Barishal Central Diagnostic Center (KSA)",
         "ksaRegular": 4500,
         "location": "barishal"
     },
     {
         "id": 3,
-        "medicalName": "Yaqeen Medical Centre",
+        "medicalName": "Yaqeen Medical Centre (KSA)",
         "ksaRegular": 4500,
         "location": "barishal"
     },
     {
         "id": 4,
-        "medicalName": "Yaqeen Medical Centre   ** (KUWAIT) **",
+        "medicalName": "Yaqeen Medical Centre  (KUWAIT)",
         "ksaRegular": 5000,
         "location": "barishal"
     },
     {
         "id": 5,
-        "medicalName": "Barishal Central Diagnostic Center  ** (KUWAIT) **",
+        "medicalName": "Barishal Central Diagnostic Center (KUWAIT)",
         "ksaRegular": 5000,
         "location": "barishal"
     },
     {
         "id": 6,
-        "medicalName": "Alif Check-up Services  ** (KUWAIT) **",
+        "medicalName": "Alif Check-up Services (KUWAIT)",
         "ksaRegular": 5000,
         "location": "barishal"
     },
@@ -103,55 +103,55 @@
     },
     {
         "id": 18,
-        "medicalName": "AL MAN MEDICAL CENTER   ** (KUWAIT) **",
+        "medicalName": "AL MAN MEDICAL CENTER  (KUWAIT)",
         "ksaRegular": 6500,
         "location": "coxsBazar"
     },
     {
         "id": 19,
-        "medicalName": "Bay Medical Centre   ** (KUWAIT) **",
+        "medicalName": "Bay Medical Centre  (KUWAIT)",
         "ksaRegular": 6500,
         "location": "coxsBazar"
     },
     {
         "id": 20,
-        "medicalName": "Chemon Health Care   ** (KUWAIT) **",
+        "medicalName": "Chemon Health Care  (KUWAIT)",
         "ksaRegular": 6500,
         "location": "coxsBazar"
     },
     {
         "id": 21,
-        "medicalName": "MAX MEDICAL CENTER   ** (KUWAIT) **",
+        "medicalName": "MAX MEDICAL CENTER  (KUWAIT)",
         "ksaRegular": 6500,
         "location": "coxsBazar"
     },
     {
         "id": 22,
-        "medicalName": "Shouq Medical Point   ** (KUWAIT) **",
+        "medicalName": "Shouq Medical Point  (KUWAIT)",
         "ksaRegular": 6500,
         "location": "coxsBazar"
     },
     {
         "id": 23,
-        "medicalName": "Shouq Medical Point",
+        "medicalName": "Shouq Medical Point  (KSA)",
         "ksaRegular": 6500,
         "location": "coxsBazar"
     },
     {
         "id": 24,
-        "medicalName": "MAX MEDICAL CENTER",
+        "medicalName": "MAX MEDICAL CENTER  (KSA)",
         "ksaRegular": 5000,
         "location": "coxsBazar"
     },
     {
         "id": 25,
-        "medicalName": "Chemon Health Care",
+        "medicalName": "Chemon Health Care  (KSA)",
         "ksaRegular": 4500,
         "location": "coxsBazar"
     },
     {
         "id": 26,
-        "medicalName": "Bay Medical Centre",
+        "medicalName": "Bay Medical Centre  (KSA)",
         "ksaRegular": 5000,
         "location": "coxsBazar"
     },
@@ -193,7 +193,7 @@
     },
     {
         "id": 33,
-        "medicalName": "AL MAN MEDICAL CENTER",
+        "medicalName": "AL MAN MEDICAL CENTER  (KSA)",
         "ksaRegular": 6500,
         "location": "coxsBazar"
     },
@@ -775,55 +775,55 @@
     },
     {
         "id": 130,
-        "medicalName": "AL ALI DIAGNOSTIC CENTER   ** (KUWAIT) **",
+        "medicalName": "AL ALI DIAGNOSTIC CENTER  (KUWAIT)",
         "ksaRegular": 7500,
         "location": "rajshahi"
     },
     {
         "id": 131,
-        "medicalName": "AL- NAHIYAN DIAGNOSTIC & MEDICAL SERVICES   ** (KUWAIT) **",
+        "medicalName": "AL- NAHIYAN DIAGNOSTIC & MEDICAL SERVICES  (KUWAIT)",
         "ksaRegular": 7500,
         "location": "rajshahi"
     },
     {
         "id": 132,
-        "medicalName": "Hope Medical Centre   ** (KUWAIT) **",
+        "medicalName": "Hope Medical Centre  (KUWAIT)",
         "ksaRegular": 7500,
         "location": "rajshahi"
     },
     {
         "id": 133,
-        "medicalName": "Labaid Limited (Diagnostics)   ** (KUWAIT) **",
+        "medicalName": "Labaid Limited (Diagnostics)  (KUWAIT)",
         "ksaRegular": 7500,
         "location": "rajshahi"
     },
     {
         "id": 134,
-        "medicalName": "Nazowa Medical Centre   ** (KUWAIT) **",
+        "medicalName": "Nazowa Medical Centre  (KUWAIT)",
         "ksaRegular": 8500,
         "location": "rajshahi"
     },
     {
         "id": 135,
-        "medicalName": "SATATA MEDICAL CHECKUP CENTER   ** (KUWAIT) **",
+        "medicalName": "SATATA MEDICAL CHECKUP CENTER  (KUWAIT)",
         "ksaRegular": 7500,
         "location": "rajshahi"
     },
     {
         "id": 136,
-        "medicalName": "AL- NAHIYAN DIAGNOSTIC & MEDICAL SERVICES",
+        "medicalName": "AL- NAHIYAN DIAGNOSTIC & MEDICAL SERVICES (KSA)",
         "ksaRegular": 5000,
         "location": "rajshahi"
     },
     {
         "id": 137,
-        "medicalName": "Hope Medical Centre",
+        "medicalName": "Hope Medical Centre  (KSA)",
         "ksaRegular": 5000,
         "location": "rajshahi"
     },
     {
         "id": 138,
-        "medicalName": "Nazowa Medical Centre",
+        "medicalName": "Nazowa Medical Centre  (KSA)",
         "ksaRegular": 5000,
         "location": "rajshahi"
     },
