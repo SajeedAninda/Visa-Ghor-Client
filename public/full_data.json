@@ -2,19 +2,19 @@
     {
         "id": 1,
         "medicalName": "Alif Check-up Services (KSA)",
-        "ksaRegular": 4500,
+        "ksaRegular": 5000,
         "location": "barishal"
     },
     {
         "id": 2,
         "medicalName": "Barishal Central Diagnostic Center (KSA)",
-        "ksaRegular": 4500,
+        "ksaRegular": 5000,
         "location": "barishal"
     },
     {
         "id": 3,
         "medicalName": "Yaqeen Medical Centre (KSA)",
-        "ksaRegular": 4500,
+        "ksaRegular": 5000,
         "location": "barishal"
     },
     {
@@ -140,7 +140,7 @@
     {
         "id": 24,
         "medicalName": "MAX MEDICAL CENTER  (KSA)",
-        "ksaRegular": 5000,
+        "ksaRegular": 6000,
         "location": "coxsBazar"
     },
     {
@@ -152,7 +152,7 @@
     {
         "id": 26,
         "medicalName": "Bay Medical Centre  (KSA)",
-        "ksaRegular": 5000,
+        "ksaRegular": 6000,
         "location": "coxsBazar"
     },
     {
