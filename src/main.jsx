@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/slip_price" element={<Pricing />} />
-          <Route path="/full_auto_slip_price" element={<NewPricing />} />
+          {/* <Route path="/full_auto_slip_price" element={<NewPricing />} /> */}
           <Route path="/our_services" element={<OurServices />} />
           <Route path="/air_ticket_prices" element={<AirTicketPrices />} />
           <Route path="/tourist_visa_prices" element={<TouristVisaPrices />} />
