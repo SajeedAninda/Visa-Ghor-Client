@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { ColorRing } from 'react-loader-spinner';
 import { Link } from 'react-router-dom';
+import Marquee from "react-fast-marquee";
+
 
 const Pricing = () => {
     const [pricing, setPricing] = useState([]);
