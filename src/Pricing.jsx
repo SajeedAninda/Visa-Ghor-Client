@@ -62,18 +62,23 @@ const Pricing = () => {
           choice.
         </p>
 
-        <div className="p-4 rounded-lg bg-gradient-to-r from-gray-100 to-gray-200 shadow-lg border border-gray-300 my-6">
-        <Marquee 
-  className="text-red-600 font-bold text-lg cursor-pointer"
-  gradient={false}
-  speed={70}
-  pauseOnHover
-  delay={3}
->
-    দিন এর পেমেন্ট দিন এই পরিশোধ করতে হবে । <span className='mx-6'>যেকোনো প্রয়োজনে হোয়াটসেপ করুন +8801763666677</span>
-  </Marquee>
-</div>
-
+        <div className='p-4  rounded-lg bg-gradient-to-r from-gray-100 to-gray-200 shadow-lg border border-gray-300 my-6 pr-8'>
+          <Marquee
+            className='text-red-600 font-bold text-lg cursor-pointer italic text-[15px]'
+            gradient={false}
+            speed={50}
+            pauseOnHover
+            delay={2}
+          >
+            অনুগ্রহ করে পেমেন্ট নির্ধারিত দিনেই পরিশোধ করুন। &nbsp;&nbsp;&nbsp;
+            একই ফাইল দুই জায়গায় পাঠালে দুটি লিঙ্কেই কাজ হবে (প্রতিটি লিঙ্কের
+            জন্য আলাদা স্লিপ নম্বর থাকবে) এবং উভয় জায়গায় বিল পরিশোধ করতে হবে।
+            &nbsp;&nbsp;&nbsp; ফাইল পাঠানোর পর সেটি বাতিল করা হলে বা পেমেন্টে
+            বিলম্ব হলে, ভবিষ্যতে স্লিপের সার্ভিসে অসুবিধা হতে পারে।
+            &nbsp;&nbsp;&nbsp; যেকোনো প্রয়োজনে হোয়াটসঅ্যাপে যোগাযোগ করুন:
+            <a href="tel:+8801763666677">+8801763666677</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </Marquee>
+        </div>
 
         {/* Search bar */}
         <div className='my-4 mx-auto max-w-sm md:max-w-lg lg:max-w-xl'>
