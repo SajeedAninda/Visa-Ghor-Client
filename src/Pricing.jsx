@@ -68,7 +68,7 @@ const Pricing = () => {
   gradient={false}
   speed={70}
   pauseOnHover
-  delay={1}
+  delay={3}
 >
     দিন এর পেমেন্ট দিন এই পরিশোধ করতে হবে । <span className='mx-6'>যেকোনো প্রয়োজনে হোয়াটসেপ করুন +8801763666677</span>
   </Marquee>
