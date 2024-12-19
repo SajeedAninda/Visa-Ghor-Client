@@ -63,12 +63,13 @@ const Pricing = () => {
         </p>
 
         <div className="p-4 rounded-lg bg-gradient-to-r from-gray-100 to-gray-200 shadow-lg border border-gray-300 my-6">
-  <Marquee 
-    className="text-red-600 font-bold text-lg cursor-pointer"
-    gradient={false}
-    speed={70}
-    pauseOnHover
-  >
+        <Marquee 
+  className="text-red-600 font-bold text-lg cursor-pointer"
+  gradient={false}
+  speed={70}
+  pauseOnHover
+  delay={1}
+>
     দিন এর পেমেন্ট দিন এই পরিশোধ করতে হবে । <span className='mx-6'>যেকোনো প্রয়োজনে হোয়াটসেপ করুন +8801763666677</span>
   </Marquee>
 </div>
